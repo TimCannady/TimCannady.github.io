@@ -1,0 +1,72 @@
+*{
+	font-family: Proxima Nova Regular, Arial;
+}
+
+header{
+	border: 1px solid black;
+	height: 50px;
+	margin-bottom: 5px;
+}
+
+
+#social{
+	border: 1px solid black;
+	position: relative;
+	width: 30%;
+	height: 50px;
+	display: inline;
+	float: right;
+	text-align: center;
+}
+
+#mainbox{
+	border: 1px solid black;
+	position: relative;
+	top: 50px;
+	left:  100px;
+	width: 60%;
+	height: 800px;
+	clear: both;
+	display: inline-block;
+	padding: 30px;
+}
+
+#biobox{
+	border: 1px solid black;
+	position: relative;
+
+	width: 275px;
+	height: 275px;
+	float:  right;
+	clear: both;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 20px;
+}
+
+#sitenav{
+	border: 1px solid black;
+	position: relative;      
+	width: 275px;   height: 275px;   float: right;   clear: both;   margin-top: 5px;   margin-bottom: 5px;   padding: 20px;
+}
+
+#recenttweets{
+	border: 1px solid black;
+	position: relative;      
+	width: 275px;   height: 275px;   float: right;   clear: both;   margin-top: 5px;   margin-bottom: 5px;   padding: 20px;
+}
+
+#soundcloud{
+	border: 1px solid black;
+	position: relative;      
+	width: 275px;   height: 275px;   float: right;   clear: both;   margin-top: 5px;   margin-bottom: 5px;   padding: 20px;
+}
+
+footer{
+	border: 1px solid black;
+	position: fixed;
+	bottom: 0px;
+	height: 30px;
+	width: 100%;
+	background-color: white;   
+}
