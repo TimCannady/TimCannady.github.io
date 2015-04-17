@@ -64,9 +64,11 @@ header{
 	border-radius: 5px;
 }
 
-#headshot{
+#bigheadshot{
 	width: 150px;
 	height: 150px;
+	border: 1px solid #BDBCB9;
+	border-radius: 5px;
 }
 
 #biobox{
