@@ -1,5 +1,11 @@
 *{
 	font-family: Proxima Nova Regular, Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+a {
+	color: #0B2247;
+	font-weight: bold;
 }
 
 html {
@@ -62,20 +68,22 @@ header{
 	background-color: white;
 	color:  #555;
 	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 #subject{
 	position: relative;
 	top: -10px;
 	left: -100px;
-	height: 40px;
+	height: 35px;
 	width: 75px;
 	background-color: #0B2247;
 	color: white;
-	font-size:14;
-	padding-top: 12px;
-	padding-left: 5px;
+	font-size:18;
+	padding-top: 15px;
 	border-radius: 5px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .blogtitle{
@@ -84,6 +92,10 @@ header{
 	text-transform: uppercase;
 	font-weight: bold;
 
+}
+
+.italics{
+	font-style: italic;
 }
 
 .blogbody{
