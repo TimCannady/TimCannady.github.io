@@ -4,7 +4,7 @@
 
 html {
     background-color: #eee;
-    height:;
+    height:1000px;
 }
 
 header{
@@ -12,6 +12,7 @@ header{
 	height: 50px;
 	margin-bottom: 5px;
 	background-color: #0B2247;
+
 
 }
 
@@ -54,7 +55,7 @@ header{
 	top: 50px;
 	left:  100px;
 	width: 60%;
-	height: 750px;
+	height: 600px;
 	clear: both;
 	display: inline-block;
 	padding: 30px;
