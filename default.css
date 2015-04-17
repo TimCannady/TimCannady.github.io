@@ -1,16 +1,25 @@
 *{
-	font-family: Proxima Nova Regular, Arial;
+	font-family: Proxima Nova Regular, Helvetica, Arial, sans-serif;
+}
+
+html {
+    background-color: #eee;
 }
 
 header{
 	border: 1px solid black;
 	height: 50px;
 	margin-bottom: 5px;
+	background-color: #0B2247;
+	font-family: Arial;
+	color: #ddd;      font-size: 30px;   font-weight: bold;   
+	letter-spacing: -.1em;         
+	text-shadow: -1px -1px #000;   
+	text-transform: uppercase;
 }
 
 
 #social{
-	border: 1px solid black;
 	position: relative;
 	width: 30%;
 	height: 50px;
@@ -19,8 +28,15 @@ header{
 	text-align: center;
 }
 
+#photobox {
+    position: relative;   width: 275px;   
+    font-size: 20px;   float: right;   clear: both;   margin-right: 80px;   
+    margin-top: 55px;   background-color: #eee;   color: #555;
+    text-transform: uppercase;
+}
+
 #mainbox{
-	border: 1px solid black;
+	border: 1px solid #BDBCB9;
 	position: relative;
 	top: 50px;
 	left:  100px;
@@ -29,37 +45,58 @@ header{
 	clear: both;
 	display: inline-block;
 	padding: 30px;
+	background-color: white;
+	color:  #555;
+	border-radius: 5px;
 }
 
+
+
+
 #biobox{
-	border: 1px solid black;
 	position: relative;
 
 	width: 275px;
-	height: 275px;
-	float:  right;
+	/* height: 275px; */
+	float: right;
 	clear: both;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	padding: 20px;
+	margin-top: 15px;
+	margin-bottom:  5px;
+	margin-right: 80px;
+	/* padding: 20px; */
+	font-size: 16px;
+	background-color: #eee;
+	color: #555;
 }
 
 #sitenav{
-	border: 1px solid black;
 	position: relative;      
-	width: 275px;   height: 275px;   float: right;   clear: both;   margin-top: 5px;   margin-bottom: 5px;   padding: 20px;
+	width: 275px;   
+	/* height: 275px; */   float: right;   clear: both;   margin-top: 5px;   margin-bottom: 5px;   margin-right: 80px;
+	/* padding: 20px; */
+	font-size: 16px;
+	background-color: #eee;
+	color: #555;
 }
 
 #recenttweets{
-	border: 1px solid black;
 	position: relative;      
-	width: 275px;   height: 275px;   float: right;   clear: both;   margin-top: 5px;   margin-bottom: 5px;   padding: 20px;
+	width: 275px;   
+	/* height: 275px; */   float: right;   clear: both;   margin-top: 5px;   margin-bottom: 5px;   margin-right: 80px;
+	/* padding: 20px; */
+	font-size: 16px;
+	background-color: #eee;
+	color: #555;
 }
 
 #soundcloud{
-	border: 1px solid black;
 	position: relative;      
-	width: 275px;   height: 275px;   float: right;   clear: both;   margin-top: 5px;   margin-bottom: 5px;   padding: 20px;
+	width: 275px;   
+	/* height: 275px; */   float: right;   clear: both;   margin-top: 5px;   margin-bottom: 5px;   margin-right: 80px;
+	/* padding: 20px; */
+	font-size: 16px;
+	background-color: #eee;
+	color: #555;
 }
 
 footer{
@@ -69,4 +106,5 @@ footer{
 	height: 30px;
 	width: 100%;
 	background-color: white;   
+	margin-top: 50px;
 }
