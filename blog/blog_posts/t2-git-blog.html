@@ -1,0 +1,82 @@
+<html><head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../styles/blog-stylesheet.css"> 
+    <link rel="stylesheet" type="text/css" href="../../styles/default.css"> 
+    <title>
+      Tim Cannady
+    </title>
+  <style type="text/css"></style></head>
+
+  <body>
+
+  <header>
+    <div id="headername"><a href="../../index.html">Tim Cannady</a></div>
+    <div id="social">
+      <a href="https://github.com/TimCannady"><img src="../../imgs/github32.png"></a>
+      <a href="https://plus.google.com/112916819767748948561/posts"><img src="../../imgs/googleplus32.png"></a>
+      <a href="https://www.linkedin.com/in/timcannady"><img src="../../imgs/linkedin32.png"></a>
+      <a href="https://soundcloud.com/ever"><img src="../../imgs/soundcloud32.png"></a>
+      <a href="http://www.twitter.com/tcannadysf"><img src="../../imgs/twitter32.png"></a>
+    </div>src="../imgs/twitter32.png">
+    </div>
+  </header>
+
+  <div id="photobox">
+  <img src="http://33.media.tumblr.com/avatar_6cf41b97f3fe_48.png" alt="Tim Cannady" id="avatar"> Tim Cannady
+</div><div id="biobox">Reflections on web devopment and product management
+    <ul>
+      <li>student: DBC</li>
+      <li>mkt mgr + product liaison: TRLA</li>
+      <li>timcannady@gmail.com</li>
+      <li>twitter.com/tcannadysf</li>
+      <li>linked.com/in/timcannady</li>
+      <li>github.com/timcannady</li>
+    </ul>
+  </div>
+
+
+  <div>
+    <ul id="sitenav">
+      <li style="margin-right:20px"><a href="../../index.html">Home</a></li>
+      <li style="margin-right:20px"><a href="../blog-home.html">My Blog</a></li>
+      <li><a href="">RSS</a></li>
+    </ul>
+
+  </div>
+  
+  <div id="recenttweets">
+    <a class="twitter-timeline" href="https://twitter.com/TCannadySF" data-widget-id="377547627438419968">Tweets by @TCannadySF</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>   
+  </div>
+
+  <div id="soundcloud">
+     <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F105780607"></iframe>
+
+  </div>
+
+<!-- ####Blog Posts#### -->
+<div id="mainbox">
+    <p id="subject">HTML<br>CSS</p>
+      <div class="blogbody">
+        <p class="blogtitle">
+        T2 Git Blog: CSS Positioning - Static, Absolute, Relative
+        </p>
+        <p class="blogpost">
+        Positioning things on a webpage is a little tricker than it looks. Chances are you've seen thousands of websites during your tenure as a professional internet surfer, and it's easy to forget the work that's taken place to grant you those experiences.</p>
+        <p class="blogpost">
+        Take buildings, for example. Each day we see structures that took thousands of man-hours to complete. Land was purchased, permits obtained, land bulldozed and foundations poured. Architects designed the structure, and contractors built the framework before laying the wiring and painting the walls. Websites are created in a similar fashion, albeit with a digital medium. Similar to building a website, we've seen so many buildings that we might simply think, "that wall looks easy to move."</p>
+        <p class="blogpost">
+        An HTML element is like a building's wall (or staircase, or any other physical feature), and moving them around isn't as simple as the drag of a mouse. One must understand how the element fits with the overall structure. Enter 'element positioning'. Sure, you can move it around like you can push a staircase around (stay with me here). But the element's borders are going to push things around, and a staircase is going to be difficult to scale if ends facing a wall.</p>
+        <p class="blogpost">
+        Let's take a peek at some positioning basics for elements:</p>
+        <p class="blogpost"><ul class="ul">
+        <li class="li"><span class="bold">Static:</span> all elements are Static by default. This means they'll be positioned "wherever they should be when it comes to the normal document flow." Explaining the workings of the document flow is best saved for a discussion on what's called the "Box Model." Just know that the browser interprets the document top-to-bottom placing each element where it "should go" based on where the other elements are (EG: don't overlap). Also, you can't move an element around (EG left, right, top, bottom) if it has Static positioning. You must change the value first.</li>
+        <li class="li"><span class="bold">Relative:</span> setting a position to Absolute can cause some confusion, but just know these two things: 1) An Absolute element defaults to the upper-left hand corner of the first parent element that has a positioning value of anything other than Static. Yes, a lot of words, but it's pretty simple. If you put a box with Absolute positioning within a series of other boxes-in-boxes, the Absolute box will align to the first box that has non-Static (non-default) positioning. Easy! 2) Setting positioning to Absolute removes the element from the normal document flow. Thus it can now overlap other elements, which can be good or bad depending on your goal. If you want your element to remain within the box it's currently in, you must set a width and heigh of the container or risk having the Absolute element overrun the borders. It's like the drawer I have for all my t-shirts. The drawer is way too small for all my shirts. If I set my drawer to Relative and my bundle of shirts to Absolute, the shirts would magically spill through the drawer's wall if I didn't also set the drawer's length and height to accommodate the larger bundle. </li>
+        <li class="li"><span class="bold">Absolute:</span> here's a tip when thinking about Relative positioning: imagine you have a box. If you set the box's position to Relative, it puts it exactly where it should be (a'la Static positioning). BUT, you can then shift the element Relative to where it would normally land. Repeat: 'relative to where IT should be. It's almost like youre looking at a box and shifting a ghost of itself in one direction, but the original box remains behind. The reason we look at it like this is because of the implications how it has on the normal document flow and any other objects around it. I'm still not exactly clear on how it affects them, but just keep this in mind. For example, if you have a container div that won't collapse to fit the size of the text within, it might be because of this. I'll check back when I learn more!</li>
+        </ul></p>
+      </div>
+   </div>
+<!-- ####End Blog Posts#### -->
+
+  <footer></footer>
+</body></html>

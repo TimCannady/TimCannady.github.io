@@ -22,9 +22,9 @@ header{
 	height: 50px;
 	margin-bottom: 5px;
 	background-color: #0B2247;
-
-
 }
+
+
 
 #headername{
 	font-family: Arial;
@@ -65,7 +65,7 @@ header{
 	top: 50px;
 	left:  100px;
 	width: 60%;
-	height: 600px;
+/*	height: 600px;*/
 	clear: both;
 	display: inline-block;
 	padding: 30px;

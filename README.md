@@ -4,7 +4,7 @@ My DBC Phase 0 GitHub Pages site! About-Tim and Blog using HTML + CSS with versi
 
 #MVP
 
-A static landing page for a website for an about-me.
+A static landing page for an 'about-me' website.
 
 #Design
 
