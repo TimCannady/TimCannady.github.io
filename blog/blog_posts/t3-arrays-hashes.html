@@ -17,7 +17,7 @@
       <a href="https://www.linkedin.com/in/timcannady"><img src="../../imgs/linkedin32.png"></a>
       <a href="https://soundcloud.com/ever"><img src="../../imgs/soundcloud32.png"></a>
       <a href="http://www.twitter.com/tcannadysf"><img src="../../imgs/twitter32.png"></a>
-    </div>src="../imgs/twitter32.png">
+    </div>x
     </div>
   </header>
 
@@ -60,15 +60,39 @@
     <p id="subject"><br># [ ]</p>
       <div class="blogbody">
         <p class="blogtitle">
-        Containers - hashes and arrays
-        </p>
-        <p class="blogpost">
-        <!-- enter paragraph here-->
+        Collections and Container Objects: Arrays and Hahes
         </p>
 
-       <!--<p class="blogpost"><ul class="ul">
-          <li class="li"><span class="bold"> enter UL title here </span> enter LI's here </li>
-        </ul></p>-->
+        <p class="blogpost">
+          <a href="http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657"><span class="italics">"In programming, you general deal not only with individual objects but with collections of objects." -Well Grounded Rubyist.</span></a>
+        </p>
+
+        <p>
+          This is where arrays and hashes come into play. "What about strings", you ask? Remember that strings are a single object. Each character in a string isn't its own object, as a test to .object_id will show. So it's best to look at strings as single objects, and our  handy tools arrays and objects as ways to contain multiple objects.
+        </p>
+
+        <p class="blogpost">
+          Let's take things a little further by looking at the latter. They're similar in that they both contain data. However arrays dot his in an 'organized' fashion, where hashes are unordered. Why? Because sometimes we like things to be orderly, and sometimes we actually benefit from the casualness of an unordered collection. For example, every Sunday (before Game of Thrones) I put all my daily vitamins in respective holders of a pill box. This is an ordered collection, much like an array. Even moreso because it's linear Monday-Friday (more about his later). However when when 11:30am rolls around and I have my mid-morning snack of almonds and cashews, I like them to be mixed. I want them to be in a collection, like a bowl (or a hash - the digital kind, not breakfast). But I prefer an unorganized mix. 
+        </p>
+
+       <p class="blogpost">
+       <ul class="ul">
+          <li class="li"><span class="bold">Array: </span>arrays are organized groups of data laid out in a relatively-linear fashion. The first slot is for the first slot, and the second slot is for the second object. Want to know which object is in the first slot? Easy, just ask the array which item is in the first slot and it will tell you! Just about anything can be stored in a slot, even other arrays! Can't imagine what that's like? Just imagine a train pulling a bunch of carts. That's an array. Drop a few carts into one of the carts and you've got an array in an array (also known as a '3d' array).
+          </li>
+          </p>
+
+          <img class="blogimg" src="../../imgs/pillbox.jpg"/>
+
+          <li class="li"><span class="bold">Hashes: </span>hashes are frequently called 'key-value pairs of data.' A key is a like the word "name" and the value is like the name "Tim." Or "dog-Fido." Like arrays, hashes profide the convenience of holding a bunch of object. However they do it in an unorganized manner, like our mixed nut example. Sometimes we just want to store a bunch of data an an unorganized box. For example, if you made an object for each student in the class, there's no real need to organize them. At least not from the start. Perhaps sorting alphabetical would be beneficial later on, but there's methods for that. But students needn't be organized inherently. The way you access them is simply by asking for the specific object. Want to query Tim? Just ask it!
+          </li>
+          </p>
+        </ul>
+
+          <img class="blogimg" src="../../imgs/nuts.jpeg"/>
+
+        <p class="blogpost">
+         The main takeaway is that arrays and hashes are both containers for collections of objects. However they store data differently (organized/unorganized), and consequentially, their data is accessed differently. For arrays you simply use index notation [0-n], and in Hashes you can simply ask the object (assuming you know it exists. If you don't, you can ask the hash describe its contents!). Furthermore, both have unique looping and iteration techniques when it comes to accessing data from multiple indexes (arrays) or key-value pairs (hashes).
+        </p>
 
       </div>
    </div>
