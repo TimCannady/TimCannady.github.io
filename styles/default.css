@@ -81,6 +81,14 @@ header{
 	border-radius: 5px;
 }
 
+.blogimg{
+	position: relative;
+	margin: 0px auto;
+	display:block;
+	border: 1px solid #BDBCB9;
+	border-radius: 5px
+}
+
 #biobox{
 	position: relative;
 
