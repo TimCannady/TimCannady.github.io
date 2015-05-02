@@ -67,13 +67,13 @@
          <span class = "italics"> <a href="http://ruby-doc.org/core-2.2.2/Enumerator.html">"An enumerator is a class which allows both internal and external iteration."</a></span> 
         </p>
          <p class="blogpost">
-         In other words, a class is considered "to be an enumerator" if it has a specific set of methods that allow for iteration. We're familiar with casses like Array and String being enuerable, but this is because they come bundled with built-in enumerable methods. Which methods, you ask? Mainly the ones that allow iteration. The most popular one (as well as mandatory) is <span class = "italics">.each</span>. 
+         In other words, a class is considered "to be an enumerator" if it has a specific set of methods that allow for iteration. We're familiar with casses like Array and String being enuerable, but this is because they come bundled with built-in enumerable methods. Which methods, you ask? Mainly the ones that allow iteration. The most popular (as well as mandatory) is <span class = "italics">.each</span>. 
         </p>
         <p class="blogpost">
         So enumerators are classes that can be iterated. Whether or not they can be iterated is up do the methods they contain. Popular classes come with them built in, but you can also make custom classes that are enumerable by adding  <a href="http://stackoverflow.com/questions/7220634/how-do-i-use-the-enumerable-mixin-in-my-class"><span class = "italics">include Enumerable</span></a> during their initial definition. Now lets learn about some of the popular enumerable methods:
         </p>
         <p class="blogpost"><ul class="ul">
-          <li class="li"><a href="http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-cycle"><span class="bold">.cycle</span></a> <p>cycle is cycles through your elements. Simple! For example, call cycle on an array, pass it a block do to something to each element of that array. It will do this. Forever. (remember to pass it an argument if you want it to just cycle n-times)</p>
+          <li class="li"><a href="http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-cycle"><span class="bold">.cycle</span></a> <p>cycle cycles through your elements. Simple! For example, call cycle on an array, pass it a block do to something to each element of that array. It will do this. Forever. (remember to pass it an argument if you want it to just cycle n-times)</p>
           <p><img src="../../imgs/cycle.png"></p>
            </li>
            <li class="li"><a href ="http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-group_by"><span class="bold">.group_by</span></a> <p>group_by groups your elements by whatever you pass in the block. It returns a hash. Stay with me here. The values of the keys are from evaluated result passed to the block. The hashe's values are the arrays (eg indexes) of the elements that resulted in that outcome.</p>
@@ -88,7 +88,7 @@
           <p><img src="../../imgs/map.png"></p>
            </li>
           <p class="blogpost">
-          There's plenty of other enumerator methods to do all the tricks you need. Be sure to check out <a href ="http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-group_by">the Ruby Docs</a> for more! 
+          There's plenty of other enumerator methods to do all the tricks you need. Be sure to check out <a href ="http://ruby-doc.org/core-2.2.2/">the Ruby Docs</a> for more! 
           </p>
         </ul>
         </p>
