@@ -2,7 +2,7 @@
 
 https://timcannady.github.io/index.html
 			
-My DevBootcamp Phase-0 GitHub blog! An About-M and Blog using HTML + CSS with version tracking. Will add more as we learn new technologies - work in progress.
+My DevBootcamp Phase-0 GitHub site. An About-Me and Blog using HTML + CSS with version tracking. Will add more as we learn new technologies. Work in progress.
 
 #MVP
 
