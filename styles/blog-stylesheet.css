@@ -22,8 +22,10 @@ header{
 	height: 50px;
 	margin-bottom: 5px;
 	background-color: #0B2247;
+}
 
-
+#aheadstyle{
+	color:white;
 }
 
 #headername{
