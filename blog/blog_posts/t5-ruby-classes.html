@@ -68,27 +68,27 @@
         That should be how you feel when someone mentions classes in Ruby - that they're super powerful, and you love them!  
         </p>
         <p class="blogpost">
-        Humans like things to make sense, and we go to some pretty big lengths to make sure they do! We explore, poke and prod. We create languages so we can make sense of our findings, and we create names so we can tell things apart. For example, humans and dog are both "things". They're both living things, and they're both mammals. And both like being pet. But that's about it. 
+        Humans like things to make sense, and we go to some pretty big lengths to make sure they do! We explore, poke and prod. We create languages so we can make sense of our findings, and we create names so we can tell things apart. For example, humans and dog are both "things". They're both living things, and they're both mammals. And both like being pet.
         </p>
         <p class="blogpost">
-        Like comparing and contrasting two mammal's similarities, classes in Ruby allow us to create objects that come pre-packged with specific traits, including those they inherit - similar to how a dog and human inherit traits from the mammal 'class'. Let's take a closer look by creating a class together.
+        Like comparing and contrasting two mammal, classes in Ruby allow us to create objects that come pre-packged with specific traits, including those they inherit - similar to how a dog and human inherit traits from the mammal 'class'. Let's take a closer look by creating a class together.
         </p>
         <p class="blogpost">
-        Let's say we run a website that specializes in being the de-facto spot to download music. We'll need a way to categorize and organize the tunes. Classes to the rescue! We could create a new generic object for each song, but guess what? Object.new is just creating a new object of the class <span class="italics">Class </span>. There's nothing generic about music, so let's learn how we can create a class called "Track". That way, we can call .new on it and have each song come pre-packaged with track-like attributes.
+        Let's say we run a website that specializes in music downloads. We'll need a way to categorize and organize the tunes. Classes to the rescue! We could create a generic object for each song, but guess what? Object.new is just creating a new object of the class <span class="italics">Class </span>. There's nothing generic about music, so let's learn how we can create a class called "Track". That way, we can call .new on it and have each song come pre-packaged with track-like attributes.
         </p>
 
         <p class="blogpost">
-        Here we define a class called Track. Because our new class is empty, let's give it a method called 'title' that takes no arguments and simply returns "I'm empty." After that we do something with it! We create a new instance of a track and name it 'new_track'. After that we call our new method on our new track. <span class="italics">From our new Track class!</span>
+        Here we define a class called Track. Our new class is empty, so let's give it a method called 'title' that takes no arguments and simply returns "I'm empty." After that we create a new instance of a track and name it 'new_track'. Then we call our new method on our new track. <span class="italics">From our new Track class!</span>
         </p>
         <p><img class="blogimg" src="../../imgs/class1.png"></p>
 
         <p class="blogpost">
-        Let's have some more fun with the class by giving it a method called 'initialize'. Initialize is a special method and is used when we want each instance of our class to be "initialized" with certain attributes upon creation - typically methods and variables. All songs need a title, so lets be sure every instance of Track is initialized with one. We 'title' equal to a funny looking variable called @title. Recall that local variables disappear as soon as their method completes. We wouldn't want that to happen to our title attribute, so we use something called instance variable - all of which begin with the "@" symbol. Next, let's define a method called 'info'. This will eventually read us all the track's info. We'll finish up by passing in a track name, "Song1", and then calling the info method on our new track:
+        Here we give the class a method called 'initialize'. Initialize is a special method and is used when we want each instance of our class to be "initialized" with certain attributes upon creation. All songs need a title, so lets be sure every instance of Track is initialized with one. We asign 'title' equal to a funny looking variable called @title. Recall local variables disappear as soon as their method completes. We wouldn't want that to happen to our title attribute, so we use something called instance variable - all of which begin with the "@" symbol. That way it can be accessed from anywhere in the program - and at any time. Next, we define a method called 'info'. This will eventually output the track's info. We finish up by passing in a track name, "Song1", and then calling the info method on our new track:
         </p>
         <p><img class="blogimg" src="../../imgs/class2.png"></p>
 
         <p class="blogpost">
-        A good song should have more info than a title, so we expand the initialize method and then create methods so the user can access each new attribute. We finish by creating a new track, passing in some info and then calling one of our methods on our new track:
+        A song should have more info than a title. We first expand the 'initialize' method to accept more arguments. Then we create individual methods so the user can read each attribute. We finish by creating a new track, passing in some info and then calling one of our methods on our new track:
         </p>
         <p><img class="blogimg" src="../../imgs/class3.png"></p>
 
@@ -98,17 +98,17 @@
         <p><img class="blogimg" src="../../imgs/class4.png"></p>
 
         <p class="blogpost">
-        If you're like me, you're beginning to get intimidated by how quickly our class has grown. And all just to store a few attributes. Fear not, Ruby to the rescue. If you notice your class methods are doing one thing, it's likely that they're either "reading" or "writing". For example, our artist method simply "reads" its value to the user by returning it. In cases like these, we can tidy things up by using 'attr_reader' and 'attr_writer'. Notice all the single-task methods disappeared and are now stored at the top. The functionality is the same: 
+        You might be intimidated by how quickly our class has grown. And all just to store a few attributes. Fear not, Ruby to the rescue. If you notice your class methods are doing one thing, it's likely that they're either "reading" or "writing". For example, our artist method simply "reads" its value to the user. In cases like these we can tidy things up by using 'attr_reader' and 'attr_writer'. Notice the single-task methods have been absorbed into the 'attr_reader' section at the top. The functionality is the same: 
         </p>
         <p><img class="blogimg" src="../../imgs/class5.png"></p>
 
         <p class="blogpost">
-        Ruby rescues us when from our single-use "write" statements as well. In this example we didn't create any methods to write with, but note at the bottom that I try to update the 'artist' variable from "Artist1" to "Artist2." Note the error we receive at the bottom. This is because we haven't taught our Track class how to accept this kind of update. Remember, a computer program does exactly what you teach it - and no more!
+        Ruby also rescues us from our single-use "write" statements. In this example we didn't create any methods to write with, but note at the bottom where we try to update the 'artist' variable from "Artist1" to "Artist2" and the error it returns. This is because we haven't taught our Track class how to accept this kind of update. Remember: a computer program does exactly what you teach it - and no more!
         </p>
         <p><img class="blogimg" src="../../imgs/class6.png"></p>
 
         <p class="blogpost">
-        We address this by adding 'attr_reader' at the top. Alas, our attempt to "write" works. Ruby also offers another tool called 'attr_accessor'. Use this as a shortcut for attributes that you'll allow to be both written and read. I specifically use the term "allow" because the accessor tool might seem convenient, but it can cause headache - and even abuse - if not used only when needed:
+        We address this by adding 'attr_reader' to the top. Alas, our attempt to "write" works. Ruby also offers another tool called 'attr_accessor'. Use this as a shortcut for attributes that you'll allow for both reading and writing. I specifically use the term "allow" because the accessor tool might seem convenient, but it can cause headache - and even abuse - if not used sparingly:
         </p>
         <p><img class="blogimg" src="../../imgs/class7.png"></p>
 
@@ -127,7 +127,7 @@
         </ul></p>
 
          <p class="blogpost">
-        This is just a basic overview of classes, akin to a song's title being a mere glance at the song itself. One major topic we didn't cover includes "inheritance", for example how our track might inherit from a parent-class 'Music', along with its methods for start/pause/stop. Another topic is how classes can share and communicate their variables and methods with one-another. Finally, and one of the most important, is how to "mixin Enumerable", which is how we can teach our classes to be enumerable. See my post <a href="https://timcannady.github.io/blog/blog_posts/t4-enumerable-methods.html">here</a> for a little more info on enumeration.
+        This is just a basic overview of classes, akin to a song's title being a mere glance at the song itself. One major topic we didn't cover includes "inheritance", for example how our track might inherit from a parentc class called 'Music', along with its methods to <span class="italics">start/pause/stop</span>. Another topic is how classes can share and communicate their attributes with one-another. Finally, and one of the most important, is how to "mixin Enumerable", which is how we can teach our classes to be enumerable. See my post <a href="https://timcannady.github.io/blog/blog_posts/t4-enumerable-methods.html">here</a> for a little more info on enumeration.
         </p>
 
         <p class="blogpost">
