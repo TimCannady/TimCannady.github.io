@@ -62,7 +62,7 @@
         <p class="blogtitle">What's <span class = "italics">'Variable Scope'</span> ? And how does it relate to <span class = "italics">'Self'</span> ?</p>
         </a>
         <p class="blogpost">
-        <span class = "italics">"...few elements mean the same thing everywhere. Integers, for example, mean what they mean wherever you see them. The same is true for keywords: you can't use keywords like "def" and "class" as variable names, so when you see them, you can easily glean what they're doing. But most elements depend on context for their meaning."</span> -Well-Grounded Rubyist
+        <span class = "italics">"...few elements mean the same thing everywhere. Integers, for example, mean what they mean wherever you see them. The same is true for keywords: you can't use keywords like "def" and "class" as variable names, so when you see them, you can easily glean what they're doing. But most elements depend on context for their meaning."</span> <a href="http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657">-Well-Grounded Rubyist</a>
         </p>
         <p class="blogpost">
         When it comes to understanding <span class = "italics">scope</span> and <span class = "italics">self</span>, I think one of the most important parts of the quote is the use of 'context.' Let's dive in.
@@ -101,7 +101,7 @@
           <li class="li"><span class="bold"> Class-top:</span> If your program is currently at the top level inside a class, self is the object you're currently in, being that class (the same goes for modules):</li>
           <p><img class="blogimg" src="../imgs/self3.png"></p>
           <li class="li"><span class="bold"> Instance method inside a class: </span> when in a method that resides in a class, self is the <span class = "italics">instance</span> of the class. So if you have a class generator called "Calculator", and a new <span class = "italics">instance</span> of it called "new_calc", then self is the instance, meaning the object "new_calc" (the same goes for modules). Don't quote me on this, but I <span class = "italics">think</span> this is the same reason "main" was the object in our earlier example!</li>
-          <p><img class="blogimg" src="../imgs/self4.png"></p>
+          <p><img class="blogimg" src="../  imgs/self4.png"></p>
         </ul></p>
         <p class="blogpost">
         To recap, scope and self share some similarities. Yet they have different implications - so much that they can be in differeing states at the same time. Being able to quickly identify scope and self are paramount when it comes to understanding your's and other people's code. Start with these basics and go from there!
