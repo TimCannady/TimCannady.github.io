@@ -1,0 +1,143 @@
+<html><head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../styles/blog-stylesheet.css"> 
+    <link rel="stylesheet" type="text/css" href="../../styles/default.css"> 
+    <title>
+      Tim Cannady
+    </title>
+  <style type="text/css"></style></head>
+
+  <body>
+
+ <header>
+    <div id="headername"><a id="aheadstyle" href="../../index.html">Tim Cannady</a></div>
+    <div id="social">
+      <a href="https://github.com/TimCannady"><img src="../../imgs/github32.png"></a>
+      <a href="https://plus.google.com/112916819767748948561/posts"><img src="../../imgs/googleplus32.png"></a>
+      <a href="https://www.linkedin.com/in/timcannady"><img src="../../imgs/linkedin32.png"></a>
+      <a href="https://soundcloud.com/ever"><img src="../../imgs/soundcloud32.png"></a>
+      <a href="http://www.twitter.com/tcannadysf"><img src="../../imgs/twitter32.png"></a>
+    </div>
+    </div>
+  </header>
+
+  <div id="photobox">
+  <img src="http://33.media.tumblr.com/avatar_6cf41b97f3fe_48.png" alt="Tim Cannady" id="avatar"> Tim Cannady
+</div><div id="biobox">Reflections on web devopment and product management
+    <ul>
+      <li>student: DBC</li>
+      <li>mkt mgr + product liaison: TRLA</li>
+      <li>timcannady@gmail.com</li>
+      <li>twitter.com/tcannadysf</li>
+      <li>linked.com/in/timcannady</li>
+      <li>github.com/timcannady</li>
+    </ul>
+  </div>
+
+
+  <div>
+    <ul id="sitenav">
+      <li style="margin-right:20px"><a href="../../index.html">Home</a></li>
+      <li style="margin-right:20px"><a href="../blog-home.html">My Blog</a></li>
+      <li><a href="">RSS</a></li>
+    </ul>
+
+  </div>
+  
+  <div id="recenttweets">
+    <a class="twitter-timeline" href="https://twitter.com/TCannadySF" data-widget-id="377547627438419968">Tweets by @TCannadySF</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>   
+  </div>
+
+  <div id="soundcloud">
+     <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F105780607"></iframe>
+
+  </div>
+
+<!-- ####Blog Posts#### -->
+
+<div id="mainbox">
+    <p id="subject">Ruby</p>
+      <div class="blogbody">
+
+        <p class="blogtitle">What's <span class = "italics">'Variable Scope'</span> ? And how does it relate to <span class = "italics">'Self'</span> ?</p>
+        <p class="blogpost">
+        <span class = "italics">"...few elements mean the same thing everywhere. Integers, for example, mean what they mean wherever you see them. The same is true for keywords: you can't use keywords like "def" and "class" as variable names, so when you see them, you can easily glean what they're doing. But most elements depend on context for their meaning."</span> -Well-Grounded Rubyist
+        </p>
+
+        <p class="blogpost">
+        When it comes to understanding <span class = "italics">scope</span> and <span class = "italics">self</span>, I think one of the most important parts of the quote is the use of 'context.' Let's dive in.
+        </p>
+
+
+        <p class="blogpost">
+        <h3>Scope</h3>
+        When it comes to a variable, scope has to do with whether or not it's visible to Ruby at a given stage in your program. An easy way to remember this is that a scope is used to see something; similar to a microscope or a telescope. The ability for Ruby to 'see' your variables is determined by where and how you use them. Context!
+        </p>
+
+        <p class="blogpost">
+        Here we define "x" as a top-level local variable. 'Top-level' basically means it exists outside of any other object (in theory an object at the top level belongs to the class "Object" with the name "main", but that's for later). In our example, "x" is a local variable because it only exists within the scope of where it was defined. In this case, that scope is the top-level:
+        </p>
+
+         <p><img class="blogimg" src="../../imgs/scope1.png"></p>
+
+        <p class="blogpost">
+        To test this we create a method and try to print "x" from within, giving us the following error. Ruby understands that we're trying to print "x", but it can't see where it was originally defined. This is because the scope of local variables begins and ends: at the top level, at every class or module definition block, or every method definition block. It's the latter that triggered this scope change, being when we defined "my_method". So when the scope moves inside the method, Ruby can no longer see where "x" was defined:
+        </p>
+
+         <p><img class="blogimg" src="../../imgs/scope2.png"></p>
+
+        <p class="blogpost">
+        Here we fix it by changing "x" from a local to a global variable. We do this by prepeding it with "$". Global variables have a global scope. This means Ruby can find them virtually anywhere in the program. Awesome, right? Sort of. Recall OOP principals urge our objects to, in some ways, be as weak as possible. 'Single-use' and lack of knowing other method's inner-workings are considered strong principals. So a variable that can be accessed from anywhere in a program draws a red flag. This example shows global scope basically means 'anywhere in the program':
+        </p>
+
+         <p><img class="blogimg" src="../../imgs/scope3.png"></p>
+
+        <p class="blogpost">
+        That's about it as far as scope goes. A variable's scope is determined by where it was defined and called. And scope changes three ways: at the top-level (default), at the begin/end of Class and Module definitions, and every method definition. Next, let's take a quick look at the idea of <span class = "italics">self</span>.
+        </p>
+
+        <p class="blogpost">
+        <h3>Self</h3>
+        It feels a little more confusing, but it doesn't have to! The easiest way to begin is to recall everything in Ruby is an object. To ask, "which object is self?" is to ask "which object is Ruby currently looking at." That way, when we call a method, Ruby knows which item to look at.
+        </p>
+
+        <p class="blogpost">
+        There can only be one self at a time, so determining which object is self is as simple as recognizing which context our program is in:
+        </p>
+
+        <p class="blogpost"><ul class="ul">
+          <li class="li"><span class="bold"> Top-level: </span> when our program is at the top level, self is an instance of Object and is named "main": </li>
+
+          <p><img class="blogimg" src="../../imgs/self1.png"></p>
+
+          <li class="li"><span class="bold"> Top-level method: </span> when your program is in a method at the top-level (meaning it is not, for example, inside a class), self is whichever object is self when the method is called. Keep in mind scope changes at every method definition, but this isn't necessarily the case for self. In our example, scope changes, but we notice self does not:</li>
+
+          <p><img class="blogimg" src="../../imgs/self2.png"></p>
+
+          <li class="li"><span class="bold"> Class-top:</span> If your program is currently at the top level inside a class, self is the object you're currently in, being that class (the same goes for modules):</li>
+
+
+          <p><img class="blogimg" src="../../imgs/self3.png"></p>
+
+          <li class="li"><span class="bold"> Instance method inside a class: </span> when in a method that resides in a class, self is the <span class = "italics">instance</span> of the class. So if you have a class generator called "Calculator", and a new <span class = "italics">instance</span> of it called "new_calc", then self is the instance, meaning the object "new_calc" (the same goes for modules). Don't quote me on this, but I <span class = "italics">think</span> this is the same reason "main" was the object in our earlier example!</li>
+
+          <p><img class="blogimg" src="../../imgs/self4.png"></p>
+        </ul></p>
+
+        <p class="blogpost">
+        To recap, scope and self share some similarities. Yet they have different implications - so much that they can be in differeing states at the same time. Being able to quickly identify scope and self are paramount when it comes to understanding your's and other people's code. Start with these basics and go from there!
+        </p>
+
+     <p class="blogpost">
+         I hope that helps, and if you want to learn more about scope and self I recommend Chapter 5 of the <a href="http://www.amazon.com/The-Well-Grounded-Rubyist-David-Black/dp/1933988657">Well-Grounded Rubyist</a>. And for some self in action, <a href ="https://github.com/TimCannady/phase-0-unit-2/blob/master/week-6/drawer-debugger/my_solution.rb">take a peek at my attempt</a> to code'ify the contents of a silverware drawer. Note the use of self in the "sell_silverware" method of the "silverware" class. Can you tell what it's doing? If it's unclear, feel free to get in touch and we can chat.
+        </p>
+
+      </div>
+   </div>
+
+
+<!-- ####End Blog Posts#### -->
+
+  <footer></footer>
+</body></html>

@@ -58,7 +58,7 @@ header{
     position: relative;   width: 275px;   
     font-size: 20px;   float: right;   clear: both;   margin-right: 80px;   
     margin-top: 55px;   background-color: #eee;   color: #555;
-    text-transform: uppercase;
+    text-transform: uppercase;  
 }
 
 #mainbox{
@@ -88,7 +88,9 @@ header{
 	margin: 0px auto;
 	display:block;
 	border: 1px solid #BDBCB9;
-	border-radius: 5px
+	border-radius: 5px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 #biobox{

@@ -61,7 +61,6 @@ header{
     text-transform: uppercase;
 }
 
-
 #mainbox{
 	border: 1px solid #BDBCB9;
 	position: relative;
@@ -106,7 +105,9 @@ header{
 	margin: 0px auto;
 	display:block;
 	border: 1px solid #BDBCB9;
-	border-radius: 5px
+	border-radius: 5px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .ul{
