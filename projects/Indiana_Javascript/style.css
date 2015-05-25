@@ -1,0 +1,154 @@
+html,body{
+	height: 95%
+}
+
+#content{
+	position: relative;
+	height: 100%;
+	width: 100%;	
+	text-shadow:
+    1px -2px 0 black,
+    -4px 3px 0 black,
+    -4px 3px 0 black,
+    -4px 3px 0 black,
+    -4px 3px 0 black;
+	/*border: 2px solid white*/
+}
+
+#quiz{ /*moves the all the quiz boxes around as one unit*/
+	top: 27%;
+	height: 80%;
+	left: 7%;
+	width: 85%;
+	position: absolute;
+	/*border: 2px solid white*/
+}
+
+#intro{
+	top: 0%;
+	font-weight: bold;
+	font-size: 55px;
+	width: 100%;
+	position: absolute;
+	color: #ff5c1c;
+	text-align: center;
+	letter-spacing: 2px;
+	/*border: 2px solid white */
+}
+
+#opaque{
+	width: 100%;
+	height:35%;
+	top: 15%;
+	padding-top: 2%;
+	background-color: grey;
+	opacity: 0.6;
+	position: absolute;
+	z-index: -1;
+	border: 1px solid black; 
+}
+
+#questions{
+	width: 100%;
+	height: 35%;
+	color: #ffea30;
+	font-size: 40px;
+	position: absolute;
+	top: 15%;
+	padding-top: 2%;
+	z-index: 1;
+	text-align: center;
+	letter-spacing: 2px;
+	border: 1px solid black;
+	/*overflow: scroll;*/
+	text-shadow:
+	    -2px -2px 0 black,
+	    2px -2px 0 black,
+	    -2px 2px 0 black,
+	    2px 2px 0 black;
+}
+
+#form{
+	position: absolute;
+	opacity: 0.9;
+	top: 57%;
+	text-align: center;
+	width: 100%;
+	height: 20%;
+	/*border: 2px solid white; */
+}
+
+#indylogo{
+	height: 40%;
+	padding-top: 1.5%;
+}
+
+#header{
+	position: fixed;
+	top:  0;
+	width: 100%;
+	left: 0;
+	height: 5%;
+    background-image: url(header.png);
+    background-size: 100% 100%;
+}
+
+#footer{
+	position: fixed;
+	bottom:  0;
+	width: 100%;
+	left: 0;
+	height: 5%;
+    background-image: url(footer.png);
+    background-size: 100% 100%;
+}
+
+#answerForm, #submit, #total, #mute, #quote, #instructionsButton{
+	background-color: #ff5c1c;
+	color: #ffea30;
+	font-size: 16px;
+	text-align: center;
+	text-shadow:
+	    -1px -1px 0 black,
+	    1px -1px 0 black,
+	    -1px 1px 0 black,
+	    1px 1px 0 black;
+}
+
+#trophyWrapper{
+	width: 80%;
+	left: 14.5%;
+	height: 20%;
+	top: 71%;
+	position: fixed;
+/*	border: 2px solid green;*/
+}
+
+.trophy{
+	position: relative;
+	height: 56%;
+	padding-left: 1%;
+	padding-right: 1%;
+	opacity: 0.8;
+	border-radius: 50%;
+	border: 1px solid transparent;
+}
+
+#idolWrapper{
+	width: 100%;
+	bottom: 4;
+	position: fixed;
+}
+
+#leftIdol{
+	left: 0;
+	bottom: 0;
+	position: fixed;
+}
+
+#rightIdol{
+	right: 0;
+	bottom: 0;
+	position: fixed;
+}
+

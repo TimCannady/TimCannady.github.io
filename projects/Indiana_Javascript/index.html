@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Indiana JavaScript!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="webstructure.js"></script>
+	<script src="my_solution.js"></script>
+	<link rel="shortcut icon" href="idol.png"/>
+</head>
+
+<div id ="header"></div>
+
+<body background = "indygif.gif">
+	<div id="content">
+	<img id="indylogo" src="indylogo.png">
+
+		<div id ="quiz">
+
+			<div id="intro">RAIDERS OF THE LOST OBJECT<br></div>
+
+			<div id="opaque"></div>
+
+			<div id= "questions"></div>
+
+			<div id = "form">
+					<input type="form" id="answerForm" placeholder = "answer here"/>
+					<input type="submit" id="submit" value = "SUBMIT" onclick="submitAnswer(); nextQuestion();"/>
+					<input type="button" id ="total" value ="SCORE" onclick = "displayScore()"/>
+					<input type="button" id = "mute" value ="MUTE" onclick = "toggleMute()"/>
+					<input type="button" id = "quote" value ="QUOTE" onclick = "playRandomQuote(quotes,18)"/>
+					<input type="button" id = "instructionsButton" value ="INSTRUCTIONS" onclick = "toggleInstructions()"/>
+			</div>
+
+			<audio id="player" volume = "1" autoplay>
+	  			<source id = "song" src="In_the_Jungle.m4a" type="audio/mpeg" loop = "loop" controls>
+				<!-- <source id = "song" src="The_Idol_Temple.m4a" type="audio/mpeg" loop = "loop"> -->
+			</audio>
+
+		</div>
+
+	</div>
+
+		<div id = "trophyWrapper">
+			<img id = "t1" class="trophy" src = "idolProfile.png">
+			<img id = "t2" class="trophy" src = "idolProfile.png">
+			<img id = "t3" class="trophy" src = "idolProfile.png">
+			<img id = "t4" class="trophy" src = "idolProfile.png">
+			<img id = "t5" class="trophy" src = "idolProfile.png">
+			<img id = "t6" class="trophy" src = "idolProfile.png">
+			<img id = "t7" class="trophy" src = "idolProfile.png">
+			<img id = "t8" class="trophy" src = "idolProfile.png">
+			<img id = "t9" class="trophy" src = "idolProfile.png">
+			<img id = "t10" class="trophy" src = "idolProfile.png">
+			<img id = "t11" class="trophy" src = "idolProfile.png">
+		</div>
+
+		<div id="idolWrapper">
+			<img id="leftIdol" src = "idol.png"></div>
+			<img id="rightIdol" src = "idol.png"></div>
+		</div>
+
+</body>
+
+<div id = "footer"></div>
+
+</html>
+
