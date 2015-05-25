@@ -1,10 +1,11 @@
  // U3.W7: Design Basic Game Solo Challenge
-
 // This is a solo challenge
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // OVERVIEW
+//
+// Link to the game: https://timcannady.github.io/projects/indianajavascript.html
 //
 // Your mission description: JavaScript Quiz with an Indiana Jones theme
 // Overall mission: solve all the flascards!
@@ -26,13 +27,11 @@
 // Create an object to store user answers
 // Create an object to store the user's score
 // Create an object to store trophies
-
 // Create a function to get the current quetion
 // Create a function to get the current answer
 // Create a function to check the user's answer against the current answer
 // Create a function to store the users answer 
 // Create a function to store the user's score
-
 // Create a function to ask the user the current question. 
 // Create a function to submit the user's answer, triggering things like check score, store answer, etc
 // Create a function to iterate over each question/answer/trophy
@@ -41,8 +40,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // INITIAL CODE
 
-
-/////////////// Begin example that will be mentioned in my reflection. The code between line 45-73 is an example of using strings as property names instead of numbers as property names, which I used in my final solution.
+////////Begin example that will be mentioned in my reflection. The code between line 45-73 is an example of using strings as property names instead of numbers as property names, which I used in my final solution.
 // var answersQuestions = { //object with question numbers as properties and quiz questions as values
 // 	yes : "Indiana explores the Cave of Code. Does he have what it takes to retrieve the lost object?",
 // 	pop : "This method removes the last element from an array...",
@@ -69,8 +67,7 @@
 // getCurrentQuestion(answersQuestions,currentNumber);
 
 // console.log(currentQuestion)
-/////////////// End example that will be mentioned in my reflection
-
+////////End example that will be mentioned in my reflection
 
 // var questions = {
 // 	1 : "Indiana explores the Cave of Code. Does he have what it takes to recover the lost object?",
@@ -260,6 +257,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // REFACTORED CODE
+
+//Link to the Game: https://timcannady.github.io/projects/indianajavascript.html
 
 var questions = { //object with question numbers as properties and quiz questions as values
 	1 : "Indiana explores the Cave of Code. Does he have what it takes to retrieve the lost object? Begin by viewing the instructions.",
