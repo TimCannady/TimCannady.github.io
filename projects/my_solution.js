@@ -390,7 +390,7 @@ function addTrophy(){ //adds a trophy image if the user's answer is correct
 }
 
 function questionsLeft(){ //checks if there's any questions left
-	if(currentNumber < totalQuestions.length){
+	if(currentNumber <= totalQuestions.length){
 		return true
 	}else{
 		return false
