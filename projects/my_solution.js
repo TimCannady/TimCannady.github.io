@@ -288,12 +288,9 @@ var answers = { //object with question numbers as properties and quiz answers as
 	11 : "splice"
 }
 
-var userAnswers = { //initialize blank object to store question numbers as properties and user answers as values 
-}
+var userAnswers = {} //initialize blank object to store question numbers as properties and user answers as values 
 
-var userScore = { //initialize blank object to store question numbers as properties and boolean as values for correct/incorrect
-
-}
+var userScore = {} //initialize blank object to store question numbers as properties and boolean as values for correct/incorrect
 
 var trophies = { //an array to house the HTML ID's for each trophy
 	1 : "t1",
@@ -346,16 +343,15 @@ var quotes = {
 }
 
 window.onload = setFocusToAnswerForm //set the cursor to the answer form when the page loads
-window.onload = nextQuestion //set the first question when the page loads
+window.onload = cycleQuestion //set the first question when the page loads
 document.addEventListener('keydown', pressedEnter, true); //add an event listener to listen for a key being pressed. If so, trigger the pressedEnter() function.
 var currentNumber = 0; //a counter to increment through the questions, answers and trophies
 var quoteVolume = 0.7 //set default quote volume to 0.7 so we can toggle mute 
 var instructionCopy = "Type your answer then click 'submit' to pass each challenge. Click 'score' to reveal two secret objects. Watch for grammatical pit-falls! Only submit the method name, eg: <join>. Ready? Type <yes> and click submit!";
-
+var totalQuestions = Object.keys(questions) //stores the total number of properties found in the question object.
 
 function getCurrentQuestion(input,number){ //selects any question from a group of questions, assigns the result to a variable
 	currentQuestion = input[number]
-
 }
 
 function getCurrentAnswer(input,number){ //selects any answer from a group of anwers, assigns the result to a variable
@@ -374,8 +370,7 @@ function getUserScore(input,answer){ //gets the user's score, assigns the result
 	if(input == answer){
 		score = true
 		playRandomQuote(correctQuotes,4)
-	}
-	else{
+	}else{
 		score = false
 		playRandomQuote(incorrectQuotes,4)
 	}
@@ -386,20 +381,30 @@ function addUserScore(output,number){ //update the user's answer object with the
 }
 
 function addTrophy(){ //adds a trophy image if the user's answer is correct
+	var trophy = document.getElementById(trophies[currentNumber])
 	if(score){
-		document.getElementById(trophies[currentNumber]).src = "idol.png";
-		document.getElementById(trophies[currentNumber]).style.opacity = "1";
-		document.getElementById(trophies[currentNumber]).style.border = "1px solid gold";
+		trophy.src = "idol.png";
+		trophy.style.opacity = "1";
+		trophy.style.border = "1px solid gold";
 	}
 }
 
-function checkQuestionsLeft(){
-	if (currentQuestion !== undefined ){
-		document.getElementById("questions").textContent = currentQuestion;
-	} else{
-		document.getElementById("questions").textContent = "Looks like we're out of questions. Click 'score' to see if you recovered the object!";
+function questionsLeft(){ //checks if there's any questions left
+	if(currentNumber < totalQuestions.length){
+		return true
+	}else{
+		return false
 	}
+}
 
+function nextQuestion(){ //sets the next question. If there's none left, let the user know and diable the submit button.
+	question = document.getElementById("questions")
+	if(questionsLeft()){
+		question.textContent = currentQuestion;
+	}else{
+		question.textContent = "Looks like we're out of questions. Click 'score' to see if you recovered the object!";
+		document.getElementById("submit").disabled = true
+	}
 }
 
 function submitAnswer(){ //Triggered by clicking the "submit" button. Sets off chain of methods to submit and score the answer.
@@ -412,12 +417,12 @@ function submitAnswer(){ //Triggered by clicking the "submit" button. Sets off c
 	addTrophy();
 }
 
-function nextQuestion(){ //Triggered by clicking the "next question" button. Sets off chain of methods to prep for the next question.
+function cycleQuestion(){ //Triggered by clicking the "next question" button. Sets off chain of methods to prep for the next question.
 	document.getElementById("answerForm").value = "" 
 	setFocusToAnswerForm(); 
 	currentNumber ++ 
 	getCurrentQuestion(questions,currentNumber); 
-	checkQuestionsLeft();
+	nextQuestion();
 }
 
 function displayScore(){//Triggered by clicking the "score" button. Displays the two objects that house the user's answers and the user's score. 
@@ -425,38 +430,39 @@ function displayScore(){//Triggered by clicking the "score" button. Displays the
 	alert("Each question number followed by your score:" + JSON.stringify(userScore,null,1))
 }
 
-function toggleMute(){//Triggered by clicking the "mute" button. Mutes and unmutes the soundtrack.
+function toggleMute(){//Triggered by clicking the "mute" button. Mutes and unmutes the soundtrack and quote functionality, toggles the button's respective styling.
 	var muteButton = document.getElementById("mute")
-	if(document.getElementById("player").volume == 0) {
-		document.getElementById("player").volume = 1;
-		quoteVolume = 0.7;
+	player = document.getElementById("player")
+	if(player.volume == 0) {
+		player.volume = 1; //soundtrack volume
+		quoteVolume = 0.7; //quote volume
 		muteButton.style.color = "#ffea30";
 		muteButton.style.backgroundColor = "#ff5c1c" 
 	}
-	else if(document.getElementById("player").volume == 1){
-		document.getElementById("player").volume = 0;
+	else if(player.volume == 1){
+		player.volume = 0;
 		quoteVolume = 0;
 		muteButton.style.color = "#ff5c1c";
 		muteButton.style.backgroundColor = "#ffea30" 
 	}
-
 }
 
 function toggleInstructions(){//Triggered by clicking the "instructions" button. Toggles displaying the game instructions into the questions form. 
-	getCurrentQuestion(questions,currentNumber);
-	if(document.getElementById("questions").textContent !== instructionCopy){
-		document.getElementById("questions").textContent = instructionCopy;
+	question = document.getElementById("questions")
+	if(question.textContent !== instructionCopy){
+		question.textContent = instructionCopy;
 	}
-
-	else if(document.getElementById("questions").textContent == instructionCopy){
-		document.getElementById("questions").textContent = currentQuestion;
+	else if(question.textContent == instructionCopy){
+		question.textContent = currentQuestion;
 	}
 }
 
 function pressedEnter(press){ //Pressing the <enter> button on the keyboard mimics clicking the "submit" button
-	if(press.keyCode === 13){ 
-		submitAnswer();
-		nextQuestion();
+	if(questionsLeft()){
+		if(press.keyCode === 13){ 
+			submitAnswer();
+			cycleQuestion();
+		}
 	}
 }
 
@@ -464,7 +470,7 @@ function setFocusToAnswerForm(){ //sets the browser's focus to the text form
     document.getElementById("answerForm").focus();
 }
 
-function playRandomQuote(input,number){
+function playRandomQuote(input,number){ //plays a random audio file. Two args: an object of audio files, and a number (because diifferent objects have a different amount of audio files)
 	var random = Math.floor(Math.random() * number) + 1
 	var quote = new Audio(input[random]);
 	quote.volume = quoteVolume
@@ -491,34 +497,35 @@ function playRandomQuote(input,number){
 
 // The first problem I ran into was with the objects that stored my questions and answers. I had started with one single
 // object called <answersQuestions> where the property was an answer and the question was the value. This felt right,
-// but it turned out to be hard to iterate over, especially when I began using it to update HTML. I wound up making
-// the properties numbers so I could iterate them with a counter. This felt more natural seeing that I was doing 
-// a sequential quiz.
+// but it turned out to be cumbersome to iteratoe over, especially with how I was using it to update the DOM. 
+// I wound up nubmers as the properties so I could iterate them with a counter. This felt more natural seeing that 
+// I was doing a sequential quiz.
 
-// It wasn't until a while later that it hit me that my objects looked kind of like arrays! I wondered if this was
-// bad practice but couldn't come up with an efficient way to iterate over my objects. Looping with for-in is easy,
-// but that's a quick loop. I'm not sure how I'd use that in a step-by-step quiz that has HTML buttons and all. I included
-// this original code between lines 45-72. I was able to access each question and answer, but it still felt sloppy having
-// to iterate over an array. On one hand it felt like the correct way to use an object, on the other hand it felt
-// verbose. I made an executive decision and decided to keep it as it is now - with numbers as properties.
+// That said, it wasn't until a while later where it hit me that my objects looked kind of like arrays! I wondered if this was
+// bad practice but couldn't come up with a way to iterate over my objects that felt "right". Looping with for-in is easy,
+// but that's an instant loop. I'm not sure how I'd use it in a step-by-step quiz that has HTML buttons and all, not without wrapping
+// everythingin a huge loop. I included the original code between lines 45-72 just to show my work. Acceach each question 
+// and answer was eacy, but it still felt sloppy having to iterate over an array. On one hand it felt like the correct way 
+// to use an object, on the other hand it felt verbose. I made an executive decision and decided to keep it as it 
+// is now - with numbers as properties.
 
-// Another thing I ran into was during refactoring. I challenged myself to make most of my methods have
-// single-responsibility. I removed their knowledge of "how" to do stuff. The result is a bunch of single-responsibility
+// Another thing I ran into came during refactoring. I challenged myself to to have all of my methods be a 
+// single-responsibility as possible. I removed their knowledge of "how" to do stuff. The result is a bunch of clean
 // methods, but then my <submitAnswer()> and <nextQuestion()> methods have to call a bunch of other methods. 
 // I'm not sure if this is good practice. On one hand it feels weird because one button sets off such a chain of events.
 // On the other hand, the functions don't know "how" do to things. Rather, they just know "what" to do. This felt OOP-like, 
-// so I stuck with this approach. Mainly because they say "what" to do but not "how."
+// so I stuck with this approach. 
 
-// Another question I had was where to initially define three important variables <currentAnswer>, <currentQuestion> and <answer>.
-// They are updated when called by the methods at the top, so I left them to be defined inside those methods as global
-// variables. However I first had them defined as empty strings at the top level, to later be updated by the methods. Both
-// worked, I just wasn't sure what's better practice.
+// Another question I had was where to initially define three important variables: <currentAnswer>, <currentQuestion> and <answer>.
+// They are updated when called by the methods at the top, so I left them to be defined inside those methods. However I first 
+// had them defined as empty strings at the top level, to be later updated by the method calls. Both worked, I just wasn't sure 
+// what's better practice.
 
 // I had a lot of fun manipulating the DOM. I had done a JQuery course at Codeshool a while ago, so this felt
-// familiar but I had never done it without JQuery. Probably a good practice before we get into JQuery. I liked 
-// our JS/JQ book and it really helped as a reference. 
+// familiar but I had never done it without JQuery. Probably a good practice before we get into it. I liked 
+// our JS/JQ book and it helped as a reference. 
 
-// Ruby and JS have been great to learn, but I really have liked when I can see them in action. Terminal is fun,
+// Ruby and JS have been great to learn, but it's the most fun when I can see them in action. Terminal is fun,
 // but I rarely use Terminal as a consumer. Seeing things in a live browser is just so exciting, and I'm glad we had 
 // the option to do a little extra work and try to get things talking in a new format!
 
