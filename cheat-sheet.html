@@ -1,0 +1,131 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/cheat-sheet.css">  
+    <title>Tim and Marshall's Flash Cards</title>
+    <link rel="shortcut icon" href=""/>
+  </head>
+
+  <body>
+
+    <div id = "content">
+
+      <header id = "header">
+        <h1>Tim and Marshall's Cheat Sheet</h1>
+        <h2>JavaScript vs Ruby: Array Looping</h2>
+      </header>
+      
+
+      <div class = "mainbox">
+        <h3>For Loops</h3>
+
+        <p class = "text">
+          Printing each element in an array is a little more straight forward in Ruby. Worth noting is that
+          with Ruby, the iterator ('i') becomes the <span class = "italics">value</span> of the array, whereas in JavaScript, the iterator is just the index. Consequentially, JS requires a few more steps to finally print the value:
+        </p>
+
+        <p class = "title">Ruby</p>
+        <div class = "code">
+          <p>array = [1,2,3,4,5] </p>
+          <p>for i in array</p>
+          <p> puts i   </p>
+          <p>end </p>
+          <p class = "title">=>1,2,3,4,5</p>
+        </div>
+
+         <p class = "title">JavaScript</p>
+        <div class = "code">
+          <p>var array = [1,2,3,4,5]</p>
+          <p>for (var i in array) {</p>
+          <p>console.log(array[i]);</p>
+          <p>}</p>
+          <p class = "title">=>1,2,3,4,5</p>
+        </div>
+
+        <p class = "text">
+          JavaScript responds to Ruby's each() by using forEach(). It's slightly verbose and requires defining an anonymous function as an argument, but it works! You could also define the function outside of the statement and simply pass it to forEach():
+        </p>
+
+        <p class = "title">Ruby</p>
+        <div class = "code">
+          <p> (0..9).each { |n| puts n }</p>
+          <p class = "title">=>0,1,2,3,4,5,6,7,8,9</p>
+        </div>
+
+
+        <p class = "title" >JavaScript</p>
+        <div class = "code">
+          <p>arr = [0,1,2,3,4,5,6,7,8,9]</p>
+          <p>arr.forEach(function (number) {</p>
+          <p>console.log(number);</p>
+          <p>});</p>
+          <p class = "title">=>0,1,2,3,4,5,6,7,8,9</p>
+        </div>
+      </div> <!-- closing Mainbox div -->
+
+    <div class = "mainbox">
+        <h3>While Loops</h3>
+
+        <p class = "text">
+          Both Ruby and JS offer while loops. They're almost idential in syntax. Remember, a while loop is great when you don't know how many times you'll need to run the loop.
+        </p>
+
+        <p class = "title">Ruby</p>
+        <div class = "code">
+          <p>i = false</p>
+          <p>while i == false</p>
+          <p>puts "i is still false"</p>
+          <p>i = true</p>
+          <p>if i = true</p>
+          <p>puts "i is true"</p>
+          <p>end</p>
+          <p>end</p>
+          <p class = "title">=>i is still false</p>
+          <p class = "title">=>i is true</p>
+        </div>
+
+        <p class = "title">JavaScript</p>
+        <div class = "code">
+          <p>i = 10</p>
+          <p>while (i<=20) {</p>
+          <p>console.log(i);</p>
+          <p>i++</p>
+          <p>}</p>
+           <p class = "title">=>10,11,12,13,14,15,16,17,18,19,20</p>
+        </div>
+
+        <p class = "text">
+          Finally, both offer a way to run a code block at least once. Both have slightly different names, but if I were to call them something, it would be "while-do":
+        </p>
+
+        <p class = "title">Ruby</p>
+        <div class = "code">
+          <p>i = 40</p>
+          <p>while true</p>
+          <p>puts i</p>
+          <p>i += 1</p>
+          <p>break if i > 20</p>
+          <p>end</p>
+          <p class = "title">=>40</p>
+        </div>
+
+        <p class = "title">JavaScript</p>
+        <div class = "code">
+          <p>var i = 40</p>
+          <p>do {</p>
+          <p>console.log(i);</p>
+          <p>i++;</p>
+          <p>}</p>
+          <p>while (i<=20);</p>
+          <p class = "title">=>40</p>
+        </div>
+      </div> <!-- closing Mainbox div -->
+
+    </div> <!-- closing Content div -->
+
+  </body>
+
+  <footer></footer>
+
+</html>

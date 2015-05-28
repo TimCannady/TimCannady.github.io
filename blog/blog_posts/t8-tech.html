@@ -1,0 +1,161 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../styles/blog-stylesheet.css"> 
+    <!--<link rel="stylesheet" type="text/css" href="../../styles/default.css">  -->
+    <title>Tim Cannady</title>
+    <link rel="shortcut icon" href="http://33.media.tumblr.com/avatar_6cf41b97f3fe_48.png"/>
+  </head>
+
+  <header>
+    <div id="headername"><a id="aheadstyle" href="../../index.html">Tim Cannady</a></div>
+      <div id="social">
+        <a href="https://github.com/TimCannady"><img src="../../imgs/github32.png"></a>
+        <a href="https://plus.google.com/112916819767748948561/posts"><img src="../../imgs/googleplus32.png"></a>
+        <a href="https://www.linkedin.com/in/timcannady"><img src="../../imgs/linkedin32.png"></a>
+        <a href="https://soundcloud.com/ever"><img src="../../imgs/soundcloud32.png"></a>
+        <a href="http://www.twitter.com/tcannadysf"><img src="../../imgs/twitter32.png"></a>
+      </div>
+    </div>
+  </header>
+
+  <body>
+
+    <div id = "content">
+
+      <div id = "sidebar">
+
+        <div id="photobox">
+          <img id = "photoboxavatar" src="http://33.media.tumblr.com/avatar_6cf41b97f3fe_48.png" alt="Tim Cannady" id="avatar"> Tim Cannady
+        </div>
+
+        <div id="biobox">Reflections on web devopment and product management
+          <ul>
+            <li>student: DBC</li>
+            <li>mkt mgr + product liaison: TRLA</li>
+            <li>timcannady@gmail.com</li>
+            <li>twitter.com/tcannadysf</li>
+            <li>linked.com/in/timcannady</li>
+            <li>github.com/timcannady</li>
+          </ul>
+        </div>  
+
+        <div id ="sitenav">
+          <ul id = "sitenavlist">
+            <li class = "sitenav_li"><a href="../../index.html">Home</a></li>
+            <li class = "sitenav_li"><a href="../blog-home.html">My Blog</a></li>
+            <li class = "sitenav_li"><a href="../../projects.html">Projects</a></li>
+          </ul>
+        </div>
+        
+        <div id="recenttweets">
+          <a class="twitter-timeline" width = "100%" href="https://twitter.com/TCannadySF" data-widget-id="377547627438419968">Tweets by @TCannadySF</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>   
+        </div>
+
+        <div id="soundcloud">
+           <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F105780607"></iframe>
+        </div>
+      </div> 
+
+      <!--####Blog Posts####-->
+
+      <div id="mainbox">
+        <p id="subject">WebDev</p>
+        <div class="blogbody">
+          <p class="blogtitle">Tech Grab Bag: ActiveRecord, Recursion, RegEx and Rails</p>
+          <p class="blogpost"> 
+            This is what happens when asked to choose just one topic from many! On one hand I think it's best to do a deeper dive in one than skim a a few. On the other, I feel all these topics are important, and I don't really know anything about them. So I've made an executive decision to do a high-high-level review of each. That way I'll at least know what I'm getting into when we go deeper. And perhaps this can be of value to others who are at a similar level.
+          </p>   
+
+          <h3>ActiveRecord</h3>
+
+          <p class="blogpost"> 
+            I began with knowing nothing about AR. I only chose it because I've seen the name a few times. And I remember having a feeling of, "this sounds important." So let's get at it:
+          </p> 
+
+          <p class="blogpost"> 
+            ActiveRecord is what's called an ORM, or an Object-Relational Mapping. Its name refers to the Active Record Pattern identified by Martin Fowler. So it's kind of a program whose name shares liklihood with an industry theory, if that makes sense. It's also the "M" in MVC, being Model-Control-Viewer - something I know is important but am yet to get learn about.
+          </p> 
+
+          <p class="blogpost"> 
+            What does AR do? Quite a lot. And it's somewhat hard for me to understand all the benefits because I'm new to SQL and have never touched Ruby - both of which AR works closely with. That said, I understand the parts where it does the translations between Ruby objects and the database that houses them. For example, let's say a website rents out DVDs and the owner wants to display the most recent. Assuming they're already listed in his database, he'd normally have to do a significant SQL query to sort by release date and return the most recent. However with AR, all he has to do is something like: <movie = Movie.last>, where Movie is an object created using AR piggy-backed in  Ruby (at least that's what it looked like).
+          </p> 
+
+          <p class="blogpost"> 
+            This is possible because AR provides an object-oriented interface the database, making it much easier to interact with. And that's about it! When working with the database, <a href="http://ruby.about.com/od/rubyonrails/ss/What-Is-Activerecord.htm">"AR knows what you want, composes the SQL query for you, submits it, parses the output and puts in a handy Ruby object for you to use."</a> 
+          </p> 
+        
+
+          <h3>Recursion</h3>
+
+          <p class="blogpost"> 
+            I look forward to <thead></thead> day when my reaction to recursion isn't, <span class="italics">"ugh"</span>. What I've gathered is that it's hard for people to explain, it has something to do with the rapper Xzibit, and I'm not sure if it is best friends with closures, high-order functions and call-back functions. I honestly put them all in the same bucket until further inspection. <span class = "italics">Guilty until proven innocent.</span>
+          </p>
+
+          <p><img class="blogimg" src="../../imgs/recursion.jpg"></p> 
+
+          <p class="blogpost"> 
+            I know a little more than that, and I should also know better than that. I bet recursion is an important tool. Otherwise the discussions wouldn't be so rampant. If you've got haters, it means you're doing something right, right? 
+          </p>
+
+          <p class="blogpost"> 
+            Enough Exzibit talk. Recursion is best understood by breaking it down into two parts:
+          </p>
+
+          <p class="blogpost">
+            <ul class="ul">
+             <li class="li"><span class="bold">In real life terms: </span> recursion is the process of repeating items in a self-similar way. Like a hall of mirrors, a stack of Russian Dolls, or fractal art</li>
+             <li class="li"><span class="bold">In programming terms: </span> recursion uses this self-repeating theory and applies it to computer science. For example, imagine a function can calls itself</li>
+            </ul>
+          </p>
+
+          <p class="blogpost"> 
+            Below is an example in Ruby. Both methods output the n-th number in a Fibonacci Sequence. However the first approach uses recursion:
+          </p>
+
+          <p><img class="blogimg" src="../../imgs/fibrecursion.png"></p> 
+
+          <p class="blogpost"> 
+            I built fibonacciSequencer() but don't really understand what fibonacci() is doing. But I'll try to deduce at least one learning point: when I find myself doing something over and over to the input (in this example: "n"), then recursion might be the ticket.
+          </p>
+
+          <h3>RegEx</h3>
+
+          <p class="blogpost"> 
+            RegEx: <span class="italics">that thing we're never allowed to use!</span> Just kidding though. Well, sort of. There's something to be said for a tool that a lot of people say is best used in moderation. 
+          </p>
+
+          <p class="blogpost"> 
+            'RegEx' is short for 'regular expression,' and is all about pattern-matching. It's typically used to search for something in a data set. For example, you might want to remove all the spaces in a string, remove the zeroes in an array, or convert exclamation points to double-exclamation points. So it's worth noting that RegEx can search for any character type and is traditionally used to either search for, or update, the result. 
+          </p>
+
+          <p class="blogpost"> 
+            I think the reason it's suggested to use in moderation is because programs empower us with tools, like loops and iterators, that are potentially better to use. At least academically speaking. 
+          </p>
+
+           <p class="blogpost"> 
+            RegEx statements typically use delimiters like '/', so when you see something similar to <span class="italics">/[a-w&&[^c-g]z]/</span>, think RegEx. 
+          </p>
+
+          <h3>Rails</h3>
+
+      
+ 
+          <!--<p class="blogpost">
+            <ul class="ul">
+             <li class="li"><span class="bold"> LI TITLE </span> LI CONTENT </li>
+             <li class="li"><span class="bold"> LI TITLE </span> LI CONTENT </li>
+            </ul>
+          </p>-->
+
+        </div>
+      </div>
+
+      <!--####End Blog Posts####-->
+
+    </div> 
+  </body>
+  <footer></footer>
+</html>
