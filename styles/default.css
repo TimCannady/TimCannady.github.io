@@ -1,10 +1,23 @@
-	*{
-	font-family: Proxima Nova Regular, Helvetica, Arial, sans-serif;
+html{
+	background-color: #eee;
+	height: 100%;
+	width: 100%;
+}
 
+body{
+	background-color: #eee;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+*{
+	font-family: Proxima Nova Regular, Helvetica, Arial, sans-serif;
 }
 
 a, a:visited, a:active {
   color: #0B2247;
+  text-decoration: none;
   text-decoration: none;
 }
 
@@ -12,20 +25,17 @@ a:hover{
 	text-decoration: underline;
 }
 
-html {
-    background-color: #eee;
-    height:1000px;
-}
-
+/********** BEGIN HEADER ************/
+/********** BEGIN HEADER ************/
 header{
 	border: 1px solid black;
 	height: 50px;
-	margin-bottom: 5px;
 	background-color: #0B2247;
+	width: 100%;
 }
 
 #aheadstyle{
-	color:white;
+	color: white;
 }
 
 #headername{
@@ -34,53 +44,170 @@ header{
 	color: white;      
 	font-size: 30px;   
 	font-weight: bold;   
-	/*letter-spacing: -.05em;         */
+	/*letter-spacing: -.05em;*/
 	text-shadow: -1px -1px #000;   
 	text-transform: uppercase;
-	margin-left: 95px;
+	left: 7%;
+/*	margin-right: 95px;*/
 	margin-top: 9px;
+	position: absolute;
 }
 
 #social{
-/*	position: relative;
-	/* width: 30%; */*/
-	/* height: 50px; */
-	display: inline;
-	float: right;
-	text-align: center;
-	letter-spacing: 3px;
-	margin-right: 163px;
+	position: absolute;
+	width: 23%; 
 	margin-top: 9px;
+	letter-spacing: 3px;
+	margin-left: 73%;
+}
+/********** END HEADER ************/
+/********** END HEADER ************/
 
+#content{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	top: 3%;
+}
+
+/********** BEGIN SIDE BAR ************/
+/********** BEGIN SIDE BAR ************/
+#sidebar{
+	position: relative;
+	right: 2%;
+	top: 5%;
+	width: 25%;
+	height: 200%;
+	display: inline-block;
+	float: right
 }
 
 #photobox {
-    position: relative;   width: 275px;   
-    font-size: 20px;   float: right;   clear: both;   margin-right: 80px;   
-    margin-top: 55px;   background-color: #eee;   color: #555;
-    text-transform: uppercase;  
+    position: relative;   
+    width: 85%;  
+    font-size: 20px;   
+    background-color: #eee;   
+    color: #555;
+    text-transform: uppercase;
+    top: 0;
 }
 
-#mainbox{
-	border: 1px solid #BDBCB9;
-	position: relative;
-	top: 50px;
-	left:  100px;
-	width: 60%;
-/*	height: 600px;*/
-	clear: both;
-	display: inline-block;
-	padding: 30px;
-	background-color: white;
-	color:  #555;
+#photoboxavatar{
 	border-radius: 5px;
 }
 
+#biobox{
+	position: relative;
+	width: 85%;
+	font-size: 18px;
+	background-color: #eee;
+	color: #555;
+	margin-top: 2%;
+}
+
+#sitenav{
+	position: relative;
+	width: 85%;
+	height: 4%;
+	width: 90%;
+	font-size: 16px;
+	background-color: #eee;
+	color: #555;
+}
+
+#sitenavlist{
+	position: relative;
+	font-size: 20px;
+	font-size: 20px;
+	background-color: #eee;
+	color: #555;
+	list-style-type: none;
+	display: inline-flex;
+	margin-left: -12%
+}
+
+.sitenav_li{
+	margin-right: 15px; 
+}
+
+#recenttweets{
+	position: relative;      
+	width: 85%; 
+	font-size: 16px;
+	background-color: #eee;
+	color: #555;
+	border: 1px solid #BDBCB9;
+	border-radius: 5px;
+}
+
+#soundcloud{
+	position: relative;      
+	width: 85%;    
+	font-size: 16px;
+	background-color: #eee;
+	margin-top: 50px;   
+	color: #555;
+	border: 1px solid #BDBCB9;
+	border-radius: 5px;
+	margin-top: 3%;
+}
+/********** END SIDE BAR ************/
+/********** END SIDE BAR ************/
+
+
+
+/********** BEGIN BLOG POST ************/
+/********** BEGIN BLOG POST ************/
 #bigheadshot{
 	width: 150px;
 	height: 150px;
 	border: 1px solid #BDBCB9;
 	border-radius: 5px;
+}
+
+#mainbox{
+	border: 1px solid #BDBCB9;
+	position: relative;
+	top: 5%;
+	left:  7%;
+	width: 60%;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 8px;
+	padding-bottom: 0px;
+	background-color: white;
+	color:  #555;
+	border-radius: 5px;
+	margin-bottom: 3%;
+	display: inline-block;
+}
+
+#subject{
+	position: absolute;
+	top: 10px;
+	left: -7.5%;
+	width: 80px;
+	background-color: #0B2247;
+	color: white;
+	font-size: 17;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	opacity: 0.9;
+}
+
+.blogtitle{
+	position: relative;
+	font-size: 20px;
+	color: #ff6100;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0px;
 }
 
 .blogimg{
@@ -93,73 +220,51 @@ header{
 	margin-bottom: 50px;
 }
 
-#biobox{
+
+.blogbody{
 	position: relative;
-
-	width: 275px;
-	/* height: 275px; */
-	float: right;
-	clear: both;
-	margin-top: 15px;
-	margin-bottom:  5px;
-	margin-right: 80px;
-	/* padding: 20px; */
-	font-size: 16px;
-	background-color: #eee;
-	color: #555;
 }
 
-#sitenav{
-	position: relative;      
-	width: 275px;      
-	float: right;   
-	clear: both;   
-	margin-top: 5px;   
-	margin-bottom: 5px;   
-	margin-right: 80px;
+.blogpost{
+	position: relative;
 	font-size: 20px;
-	font-size: 20px;
-	background-color: #eee;
 	color: #555;
-	list-style-type: none;
-	
-	display: inline-flex;   
+}
+/********** END BLOG POST ************/
+/********** END BLOG POST ************/
+
+
+
+/********** BEGIN FORMATTING ************/
+/********** BEGIN FORMATTING ************/
+.ul{
+	list-style-type:none;
+	width: 85%;
 }
 
-#recenttweets{
-	position: relative;      
-	width: 275px;   
-	/* height: 275px; */   float: right;   clear: both;   
-	margin-top: 10px;   
-	margin-bottom: 10px;   margin-right: 80px;
-	/* padding: 20px; */
-	font-size: 16px;
-	background-color: #eee;
-	color: #555;
-	border: 1px solid #BDBCB9;
-	border-radius: 5px;
+.li{
+	margin-top: 25px;
 }
 
-#soundcloud{
-	position: relative;      
-	width: 275px;   
-	/* height: 275px; */   float: right;   clear: both;   
-	margin-top: 10px;   
-	margin-bottom: 10px;   margin-right: 80px;
-	/* padding: 20px; */
-	font-size: 16px;
-	background-color: #eee;
-	color: #555;
-	border: 1px solid #BDBCB9;
-	border-radius: 5px;
+.italics{
+	font-style: italic;
 }
+
+.bold{
+	font-weight: bold;
+}
+
+.link{
+	font-weight: bold;
+}
+/********** END FORMATTING ************/
+/********** END FORMATTING ************/
 
 footer{
-	border: 1px solid #BDBCB9;
+/*	border: 1px solid #BDBCB9;
 	position: fixed;
 	bottom: 0px;
-	height: 30px;
-	width: 100%;
-	background-color: #aaa;   
-	margin-top: 50px;
+	height: 3%;
+	width: 100%;*/
+/*	background-color: #0B2247; */  
 }
