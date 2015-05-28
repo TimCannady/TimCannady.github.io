@@ -227,7 +227,7 @@ header{
 
 .blogpost{
 	position: relative;
-	font-size: 20px;
+	font-size: 18px;
 	color: #555;
 }
 /********** END BLOG POST ************/
@@ -240,6 +240,7 @@ header{
 .ul{
 	list-style-type:none;
 	width: 85%;
+	font-size: 16px;
 }
 
 .li{
