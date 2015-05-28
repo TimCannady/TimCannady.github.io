@@ -68,7 +68,7 @@
         <h3>While Loops</h3>
 
         <p class = "text">
-          Both Ruby and JS offer while loops. They're almost idential in syntax. Remember, a while loop is great when you don't know how many times you'll need to run the loop.
+          Both Ruby and JS offer while loops. They're almost idential in syntax. Remember, a while loop is great when you don't know how many times you'll need to run the loop. In these examples we simply set 'i' to true after one pass. However a more normal scenario could be a coin-flipper where a random number is generated between 1-100 on each loop - or each flip. If the number greater than 50, 'i' becomes true. Until then, the loop would continue running:
         </p>
 
         <p class = "title">Ruby</p>
@@ -87,12 +87,15 @@
 
         <p class = "title">JavaScript</p>
         <div class = "code">
-          <p>i = 10</p>
-          <p>while (i<=20) {</p>
-          <p>console.log(i);</p>
-          <p>i++</p>
+          <p>i = false</p>
+          <p>while (i==false) {</p>
+          <p>console.log("i is still false");</p>
+          <p>i = true</p>
+          <p>if(i == true){</p>
           <p>}</p>
-           <p class = "title">=>10,11,12,13,14,15,16,17,18,19,20</p>
+          <p>}</p>
+          <p class = "title">=>i is still false</p>
+          <p class = "title">=>i is true</p>
         </div>
 
         <p class = "text">
