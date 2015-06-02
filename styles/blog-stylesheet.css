@@ -41,11 +41,11 @@ header{
 #headername{
 	font-family: Arial;
 	float: left;
-	color: white;      
-	font-size: 30px;   
-	font-weight: bold;   
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
 	/*letter-spacing: -.05em;*/
-	text-shadow: -1px -1px #000;   
+	text-shadow: -1px -1px #000;
 	text-transform: uppercase;
 	left: 7%;
 /*	margin-right: 95px;*/
@@ -55,7 +55,7 @@ header{
 
 #social{
 	position: absolute;
-	width: 23%; 
+	width: 23%;
 	margin-top: 9px;
 	letter-spacing: 3px;
 	margin-left: 73%;
@@ -78,16 +78,16 @@ header{
 	right: 2%;
 	top: 5%;
 	width: 25%;
-	height: 200%;
+	height: 100%;
 	display: inline-block;
 	float: right
 }
 
 #photobox {
-    position: relative;   
-    width: 85%;  
-    font-size: 20px;   
-    background-color: #eee;   
+    position: relative;
+    width: 85%;
+    font-size: 20px;
+    background-color: #eee;
     color: #555;
     text-transform: uppercase;
     top: 0;
@@ -128,25 +128,26 @@ header{
 }
 
 .sitenav_li{
-	margin-right: 15px; 
+	margin-right: 15px;
 }
 
 #recenttweets{
-	position: relative;      
-	width: 85%; 
+	position: relative;
+	width: 85%;
 	font-size: 16px;
 	background-color: #eee;
 	color: #555;
 	border: 1px solid #BDBCB9;
 	border-radius: 5px;
+	margin-top: 9%;
 }
 
 #soundcloud{
-	position: relative;      
-	width: 85%;    
+	position: relative;
+	width: 85%;
 	font-size: 16px;
 	background-color: #eee;
-	margin-top: 50px;   
+	margin-top: 50px;
 	color: #555;
 	border: 1px solid #BDBCB9;
 	border-radius: 5px;
@@ -257,5 +258,5 @@ footer{
 	bottom: 0px;
 	height: 3%;
 	width: 100%;*/
-/*	background-color: #0B2247; */  
+/*	background-color: #0B2247; */
 }

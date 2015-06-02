@@ -78,7 +78,7 @@ header{
 	right: 2%;
 	top: 5%;
 	width: 25%;
-	height: 200%;
+	height: 100%;
 	display: inline-block;
 	float: right
 }
@@ -139,6 +139,7 @@ header{
 	color: #555;
 	border: 1px solid #BDBCB9;
 	border-radius: 5px;
+	margin-top: 9%;
 }
 
 #soundcloud{
