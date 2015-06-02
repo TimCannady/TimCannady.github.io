@@ -41,11 +41,11 @@ header{
 #headername{
 	font-family: Arial;
 	float: left;
-	color: white;      
-	font-size: 30px;   
-	font-weight: bold;   
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
 	/*letter-spacing: -.05em;*/
-	text-shadow: -1px -1px #000;   
+	text-shadow: -1px -1px #000;
 	text-transform: uppercase;
 	left: 7%;
 /*	margin-right: 95px;*/
@@ -55,7 +55,7 @@ header{
 
 #social{
 	position: absolute;
-	width: 23%; 
+	width: 23%;
 	margin-top: 9px;
 	letter-spacing: 3px;
 	margin-left: 73%;
@@ -84,13 +84,13 @@ header{
 }
 
 #photobox {
-    position: relative;   
-    width: 85%;  
-    font-size: 20px;   
-    background-color: #eee;   
-    color: #555;
-    text-transform: uppercase;
-    top: 0;
+  position: relative;
+  width: 85%;
+  font-size: 20px;
+  background-color: #eee;
+  color: #555;
+  text-transform: uppercase;
+  top: 0;
 }
 
 #photoboxavatar{
@@ -128,12 +128,12 @@ header{
 }
 
 .sitenav_li{
-	margin-right: 15px; 
+	margin-right: 15px;
 }
 
 #recenttweets{
-	position: relative;      
-	width: 85%; 
+	position: relative;
+	width: 85%;
 	font-size: 16px;
 	background-color: #eee;
 	color: #555;
@@ -142,11 +142,11 @@ header{
 }
 
 #soundcloud{
-	position: relative;      
-	width: 85%;    
+	position: relative;
+	width: 85%;
 	font-size: 16px;
 	background-color: #eee;
-	margin-top: 50px;   
+	margin-top: 50px;
 	color: #555;
 	border: 1px solid #BDBCB9;
 	border-radius: 5px;
@@ -159,22 +159,42 @@ header{
 
 /********** BEGIN BLOG POST ************/
 /********** BEGIN BLOG POST ************/
-#bigheadshot{
-	width: 150px;
-	height: 150px;
-	border: 1px solid #BDBCB9;
-	border-radius: 5px;
+#bodyheader{
+	position: relative;
+	height: 20%;
+	margin-bottom: 3.5%;
+/*	border: 2px solid black;*/
 }
 
-#mainbox{
-	border: 1px solid #BDBCB9;
+#bigheadshot{
 	position: relative;
+	display: inline-block;
+	height: 100%;
+	border-radius: 5px;
+	border: 1px solid #BDBCB9;
+}
+
+#homebanner{
+	position: relative;
+	display: inline-block;
+	opacity: 0.3;
+	width: 80%;
+	border: 1px solid #BDBCB9;
+	border-radius: 5px;
+	margin-left: 0.5%;
+	top: 1%;
+}
+
+
+#mainbox{
+	position: relative;
+	border: 1px solid #BDBCB9;
 	top: 5%;
 	left:  7%;
 	width: 60%;
 	padding-right: 30px;
 	padding-left: 30px;
-	padding-top: 8px;
+	padding-top: 30px;
 	padding-bottom: 0px;
 	background-color: white;
 	color:  #555;
@@ -220,15 +240,16 @@ header{
 	margin-bottom: 50px;
 }
 
-
 .blogbody{
 	position: relative;
+	/*border: 1px solid red*/
 }
 
 .blogpost{
 	position: relative;
 	font-size: 18px;
 	color: #555;
+	/*border: 1px solid blue;*/
 }
 /********** END BLOG POST ************/
 /********** END BLOG POST ************/
@@ -267,5 +288,5 @@ footer{
 	bottom: 0px;
 	height: 3%;
 	width: 100%;*/
-/*	background-color: #0B2247; */  
+/*	background-color: #0B2247; */
 }
