@@ -2,7 +2,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../styles/blog-stylesheet.css"> 
+    <link rel="stylesheet" type="text/css" href="../styles/blog-stylesheet.css">
     <!--<link rel="stylesheet" type="text/css" href="../styles/default.css">  -->
     <title>Tim Cannady</title>
     <link rel="shortcut icon" href="http://33.media.tumblr.com/avatar_6cf41b97f3fe_48.png"/>
@@ -39,7 +39,7 @@
             <li>linked.com/in/timcannady</li>
             <li>github.com/timcannady</li>
           </ul>
-        </div>  
+        </div>
 
         <div id ="sitenav">
           <ul id = "sitenavlist">
@@ -48,58 +48,108 @@
             <li class = "sitenav_li"><a href="../projects.html">Projects</a></li>
           </ul>
         </div>
-        
+
         <div id="recenttweets">
           <a class="twitter-timeline" width = "100%" href="https://twitter.com/TCannadySF" data-widget-id="377547627438419968">Tweets by @TCannadySF</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>   
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
 
         <div id="soundcloud">
            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F105780607"></iframe>
         </div>
-      </div> 
+      </div>
 
       <!--####Blog Posts####-->
+      <div id="mainbox">
+        <p id="subject">HTML/CSS</p>
+        <div class="blogbody">
+          <p class="blogtitle">If it's worth doing, it's worth doing right</p>
+          <p class="blogpost">
+            This website began as a quick and dirty place to post weekly reflections. It's been a psuedo-practice in designing and managing a hand-coded website, researching technical issues and, finally, teaching them to an audience (which is always helpful).
+          </p>
+          <p class="blogpost">
+            It was never expected to be a master of anything (UX, UI, style, content, cutting-edge technologies, etc). Rather it was just a 'semi' deep-dive all at once. In other words, it was never meant to be polished.
+          </p>
+          <p class="blogpost">
+            The site has grown to something more robust and proud, including the addition of a new Projects section. And typical to growth it hasn't come without some pains.
+          </p>
+          <img class="blogimg" src="../imgs/rebuild.jpg">
+          <p class="blogpost">
+            The foundation was somewhat imperfect due to it being one of my first HTML and CSS projects. On one hand I'm proud of not letting the perfectionist drag me down. After all, "if you launch a perfect product, you've waited too long." But on the other hand it required almost a day's work (for a beginner) to retool the site. Perhaps it's a zero-sum game: it could have taken me a day to do correctly from the start seeing that I was a beginner. But now that the site has grown so much (around 25 page files) I had to go back and update each one to match the new template.
+          </p>
+          <p class="blogpost">
+            Hindsight is 20/20 so I won't be too hard on myself. But I <span class="italics">will</span> try to learn from it! Here's some questions I'll ask, followed by some hesitations that I'll probably only quiet with time:
+          </p>
+          <p class="blogpost">
+            <ul class="ul">
+             <li class="li"><span class="bold">If it's worth doing, it's worth doing right: </span>but how right?</li>
+             <li class="li"><span class="bold">Ask myself what the likelihood is that it sticks: </span> but at what point of likeliness does it matter?</li>
+             <li class="li"><span class="bold">Ask who will use it: </span>if it's not private, will I be ok with other people seeing it?</li>
+            </ul>
+          </p>
+          <p class="blogpost">
+            What's funny is that the changes are probably indiscernible because they had more to do with the structure than the design. All in all it was a valuable experience. I'll be sure to consider those questions the next time I'm building a new site. And I'm also left with some questions that feel a little more 'intermediate' in nature, which is exciting:
+          </p>
+          <p class="blogpost">
+            <ul class="ul">
+             <li class="li"><span class="bold">Asynchronous loading: </span>how can I design the site so the sidebar won't refresh on each page change? I've read about AJAX but am not sure if that's the right technology. But I'm starting to see the need for these types of technologies.</li>
+             <li class="li"><span class="bold">High-tech templates: </span>it took a while to update all the the posts to the new template. I wish there were a technology that was like a CSS for HTML. I have a template for my blog posts where I just copy in the new blog's content. But it would be cool if there were some kind of templating system. Maybe a call to "include.blog.template" at the top of the HTML file. Something to make it easier to replicate, and update, similar pages in a clean and quick manner </li>
+            </ul>
+          </p>
+          <div class = "imgbox">
+            <p>
+              "Necessity is the mother of invention"
+              <img class="blogimg" src="../imgs/necessity.jpg">
+            </p>
+          </div>
+           <p class="blogpost">
+            I initially redesigned the site so zooming didn't cause the divs to overlap (at least within 90%-125% zoom on Chrome). It's funny how much you can learn from such a simple task - both about how to update a site, as well as ideas you get for the future.
+          </p>
+        </div>
+      </div>
+
+
+
        <div id="mainbox">
         <p id="subject">Culture</p>
         <div class="blogbody">
         <a href="blog_posts/c8-conflict.html">
           <p class="blogtitle">Dealing With Conflict</p>
           </a>
-          <p class="blogpost"> 
+          <p class="blogpost">
             Interpersonal conflict is a part of life. I don't think that makes it acceptable, but I think it's something to at least come to terms with as early as possible. That way we can embrace it, recognize it and know how to navigate it with tact.
-          </p>   
-          <p class="blogpost"> 
+          </p>
+          <p class="blogpost">
             I get pretty disheveled when things "aren't right," so I generally try to avoid conflicts. I'd rather take some preemptive steps to keep things sailing smoothly instead of frequently cleaning up messes. That said, it's simply not always avoidable. And I think that's an important fact to keep in mind. Being able to accept that things might now always be "right" is a skill in itself. I wish I affected by bumps in the road. Not that they should be ignored. Rather, to be able to get back instead of immediately having to find resolve.
-          </p> 
-          <p class="blogpost"> 
+          </p>
+          <p class="blogpost">
             Here's an example of when some conflict I've experienced:
-          </p> 
-          <p class="blogpost"> 
-            In a previous job there was someone who I felt always took things wrong. Somehow my words were adjusted to include a belittling tone that I never meant to send. My personal reaction to this typically ranges with my mood. If I'm feeling empathetic or patient, I can be a little more open to understanding why. If I'm tired or have a shorter temper I might default to defensiveness, or worse, a counter-attack. None of these feelings are fun to have. I'd prefer never entering the pit, but again, it's not always avoidable. 
-          </p> 
-          <p><img class="blogimg" src="../imgs/defense.jpeg"></p> 
-          <p class="blogpost"> 
+          </p>
+          <p class="blogpost">
+            In a previous job there was someone who I felt always took things wrong. Somehow my words were adjusted to include a belittling tone that I never meant to send. My personal reaction to this typically ranges with my mood. If I'm feeling empathetic or patient, I can be a little more open to understanding why. If I'm tired or have a shorter temper I might default to defensiveness, or worse, a counter-attack. None of these feelings are fun to have. I'd prefer never entering the pit, but again, it's not always avoidable.
+          </p>
+          <p><img class="blogimg" src="../imgs/defense.jpeg"></p>
+          <p class="blogpost">
             When it comes to conflict resolution I think a good starting point is to recognize that it takes two to tango. The other person didn't become upset out of nowhere; I took part in it. So it's now on me to resolve it, even if I didn't instigate. Here's where I like to begin:
-          </p> 
+          </p>
           <p class="blogpost">
             <ul class="ul">
              <li class="li"><span class="bold">My feelings are important:</span> I felt frustrated when my words were taken in a way I didn't mean</li>
              <li class="li"><span class="bold">Their feelings are important:</span> they felt belittled by my words</li>
             </ul>
           </p>
-          <p class="blogpost"> 
-            I think it's important to start by recognizing both sides of the coin. I can be quick to be defensive, so if I never consider the other person's feelings I'd always be on the defensive; <span class="italics">"why were they bending my words? What did I do to deserve this? I'm a nice guy and I meant no harm. Why am I under attack?"</span> 
-          </p> 
-          <p class="blogpost"> 
+          <p class="blogpost">
+            I think it's important to start by recognizing both sides of the coin. I can be quick to be defensive, so if I never consider the other person's feelings I'd always be on the defensive; <span class="italics">"why were they bending my words? What did I do to deserve this? I'm a nice guy and I meant no harm. Why am I under attack?"</span>
+          </p>
+          <p class="blogpost">
             It's much easier to get a clear picture when I also consider the other side of the coin: <span class="italics">"They aren't feeling this way for no reason. SOMETHING is going on. And I played a part, even if it was innocent. So why do they feel attacked? Was it the way I said something? Was it my body language? Is there something else going on that I don't know about, and my comment hit a pain point?"</span> It's only when you can recognize that both parties deserve equal attention that conflict resolution can begin.
-          </p> 
-          <p class="blogpost"> 
-            If I could go back to any of these encounters, I'd add more patience and less defensiveness. I think too often I put the spotlight just on myself. I knew I meant well, so I wanted to defend it. But if I took myself off the pedestal I would have noticed someone who was truly hurt. Whether they were over-sensitive or not isn't something for me to decide. They're an adult and are entitled to feel how they want to. So I wish I had been even more patient and, in turn, more interested in trying to understand why these conflicts happened. 
-          </p> 
-          <p class="blogpost"> 
+          </p>
+          <p class="blogpost">
+            If I could go back to any of these encounters, I'd add more patience and less defensiveness. I think too often I put the spotlight just on myself. I knew I meant well, so I wanted to defend it. But if I took myself off the pedestal I would have noticed someone who was truly hurt. Whether they were over-sensitive or not isn't something for me to decide. They're an adult and are entitled to feel how they want to. So I wish I had been even more patient and, in turn, more interested in trying to understand why these conflicts happened.
+          </p>
+          <p class="blogpost">
             Like debugging a program, interpersonal conflict can't be brute-forced. We must step back and understand that we might have the best of intent, but if the messages aren't getting through, we must develop the skill to understand why.
-          </p> 
+          </p>
         </div>
       </div>
 
@@ -109,34 +159,34 @@
           <a href="blog_posts/t8-tech.html">
           <p class="blogtitle">Tech Grab Bag: ActiveRecord, Recursion, RegEx and Rails</p>
           </a>
-          <p class="blogpost"> 
-            A grab bag! That's what happens when asked to select just one topic from a list of many! 
-          </p>   
-          <p class="blogpost"> 
+          <p class="blogpost">
+            A grab bag! That's what happens when asked to select just one topic from a list of many!
+          </p>
+          <p class="blogpost">
             On one hand maybe it's best to do a deeper dive in one topic than skim a a few. On the other, I feel all these topics are important, and I don't really know anything about them. So an executive decision was made to do a high-high-level review of each. That way I'll at least know what I'm getting into when we get into them. And perhaps this can be of value to others who are at a similar level.
-          </p>   
+          </p>
           <h3>ActiveRecord</h3>
-          <p class="blogpost"> 
+          <p class="blogpost">
             I began with knowing nothing about AR. I only chose it because I've seen the name a few times. And I remember having a feeling of, "this sounds important."
-          </p> 
-          <p class="blogpost"> 
+          </p>
+          <p class="blogpost">
             ActiveRecord is what's called an ORM, or an Object-Relational Mapping. Its name refers to the Active Record Pattern identified by Martin Fowler. So it's kind of a program whose name shares likelihood with an industry theory, if that makes sense. It's also the "M" in MVC, being Model-Control-Viewer - something I know is important but am yet to get learn about.
-          </p> 
-          <p class="blogpost"> 
+          </p>
+          <p class="blogpost">
             What does AR do? Quite a lot. And it's somewhat hard for me to understand all the benefits because I'm new to SQL and have never touched Rails - both of which AR works closely with. That said, I understand the parts where it does the translations between Ruby objects and their database. For example, let's say a website rents out DVDs and the owner wants to display the most recent. Assuming they're already listed in his database, he'd normally have to do a significant SQL query to sort-by release date and return the most recent. However with AR, all he has to do is something like: 'movie = Movie.last', where Movie is an object created using AR piggy-backed in  Ruby (at least that's what it looked like).
-          </p> 
-          <p class="blogpost"> 
-            This is possible because AR provides an object-oriented interface the database, making it much easier to interact with. And that's about it! When working with the database, <a href="http://ruby.about.com/od/rubyonrails/ss/What-Is-Activerecord.htm">"AR knows what you want, composes the SQL query for you, submits it, parses the output and puts in a handy Ruby object for you to use."</a> 
-          </p> 
+          </p>
+          <p class="blogpost">
+            This is possible because AR provides an object-oriented interface the database, making it much easier to interact with. And that's about it! When working with the database, <a href="http://ruby.about.com/od/rubyonrails/ss/What-Is-Activerecord.htm">"AR knows what you want, composes the SQL query for you, submits it, parses the output and puts in a handy Ruby object for you to use."</a>
+          </p>
           <h3>Recursion</h3>
-          <p class="blogpost"> 
+          <p class="blogpost">
             I look forward to <thead></thead> day when my reaction to recursion isn't, <span class="italics">"ugh"</span>. What I've gathered is that it's hard for people to explain, it has something to do with the rapper Xzibit, and I'm not sure if it is best friends with closures, high-order functions and call-back functions. I honestly put them all in the same bucket until further inspection. <span class = "italics">Guilty until proven innocent.</span>
           </p>
-          <p><img class="blogimg" src="../imgs/recursion.jpg"></p> 
-          <p class="blogpost"> 
-            I know a little more than that, and I should also know better than that. I bet recursion is an important tool. Otherwise the discussions wouldn't be so rampant. If it has haters, it means it's doing something right, right? 
+          <p><img class="blogimg" src="../imgs/recursion.jpg"></p>
+          <p class="blogpost">
+            I know a little more than that, and I should also know better than that. I bet recursion is an important tool. Otherwise the discussions wouldn't be so rampant. If it has haters, it means it's doing something right, right?
           </p>
-          <p class="blogpost"> 
+          <p class="blogpost">
             Enough Exzibit talk. Recursion is best broken into two ideas:
           </p>
           <p class="blogpost">
@@ -145,28 +195,28 @@
              <li class="li"><span class="bold">In programming terms: </span> recursion uses this self-repeating theory and applies it to computer science. For example, imagine a function can calls itself</li>
             </ul>
           </p>
-          <p class="blogpost"> 
+          <p class="blogpost">
             Below is an example in Ruby. Both methods output the n-th number in a Fibonacci Sequence. However the first approach uses recursion:
           </p>
-          <p><img class="blogimg" src="../imgs/fibrecursion.png"></p> 
-          <p class="blogpost"> 
+          <p><img class="blogimg" src="../imgs/fibrecursion.png"></p>
+          <p class="blogpost">
             I only built fibonacciSequencer() but don't really understand what fibonacci() is doing. But I'll try to deduce at least one learning point: when I find myself doing something over and over to the input (in this example: "n"), then recursion might be the ticket.
           </p>
           <h3>RegEx</h3>
-          <p class="blogpost"> 
-            RegEx: <span class="italics">that thing we're never allowed to use</span>. Just kidding though. Well, sort of. There's something to be said for a tool that a lot of people say is best used in moderation. 
+          <p class="blogpost">
+            RegEx: <span class="italics">that thing we're never allowed to use</span>. Just kidding though. Well, sort of. There's something to be said for a tool that a lot of people say is best used in moderation.
           </p>
-          <p class="blogpost"> 
-            'RegEx' is short for 'regular expression,' and is all about pattern-matching. It's typically used to search for something in a data set. For example, you might want to remove all the spaces in a string, remove the zeroes in an array, or convert exclamation points to double-exclamation points. So it's worth noting RegEx can search for any character type and is traditionally used to either search for, or update, the result. 
+          <p class="blogpost">
+            'RegEx' is short for 'regular expression,' and is all about pattern-matching. It's typically used to search for something in a data set. For example, you might want to remove all the spaces in a string, remove the zeroes in an array, or convert exclamation points to double-exclamation points. So it's worth noting RegEx can search for any character type and is traditionally used to either search for, or update, the result.
           </p>
-          <p class="blogpost"> 
-            I think the reason people suggest to use in moderation is because programs empower us with tools, for example loops and iterators, that are potentially better to use. At least academically speaking. 
+          <p class="blogpost">
+            I think the reason people suggest to use in moderation is because programs empower us with tools, for example loops and iterators, that are potentially better to use. At least academically speaking.
           </p>
-          <p class="blogpost"> 
-            RegEx statements typically use delimiters like '/', so when you see something similar to <span class="italics">/[a-w&&[^c-g]z]/</span>, think RegEx. 
+          <p class="blogpost">
+            RegEx statements typically use delimiters like '/', so when you see something similar to <span class="italics">/[a-w&&[^c-g]z]/</span>, think RegEx.
           </p>
           <h3>Rails</h3>
-            <p class="blogpost"> 
+            <p class="blogpost">
               I know more about Rails' gossip than I do about Rails itself. It's like I've read all the National Inquirer articles, but I haven't invited it for coffee. People just love to talk about it. Here's what the first couple results looked like when I Google'd 'ELI5 Ruby on Rails':
             </p>
             <p class="blogpost">
@@ -177,19 +227,19 @@
                <li class="li"><span class="bold">Rails is like Subway Sandwiches</span></li>
               </ul>
             </p>
-            <p class="blogpost"> 
+            <p class="blogpost">
               Perhaps each of these replies is sufficient for a particular audience, but most of them don't help a beginner like me. Except the Subway one. That's the one that got me.
             </p>
-             <p class="blogpost"> 
+             <p class="blogpost">
               The Subway explains how Subway is for sandwiches as Rails is for Ruby. Subway offers "sandwich frameworks," being generally-accepted sandwich combinations. There's a bunch of different flavors and a couple of customization options, but in a world of endless possibilities, Subway distills the most popular.
             </p>
-           <p><img class="blogimg" src="../imgs/sandwich.png"></p> 
+           <p><img class="blogimg" src="../imgs/sandwich.png"></p>
 
-            <p class="blogpost"> 
+            <p class="blogpost">
               Here's how it relates to deploying web apps:
               <a href="https://www.reddit.com/r/web_design/comments/34the7/eli5_ruby_on_rails/cqy4eoa"><span class="italics">"A web framework is the Subway of web development. Developers of RoR know that most web applications have certain features and functions, so they package them together and organize them so that most of the code you have to write is custom code for your unique application instead of having to write basic necessary features from scratch. This allows you to make web apps very quickly and easily."</span></a>
             </p>
-             <p class="blogpost"> 
+             <p class="blogpost">
               So it lays the groundwork for mundane things like generating HTML code, handling connections to databases and serving webpages. When thinking of 'a framework,' perhaps it's best to think 'a template.' But in this case it's a template for deploying the site/app itself, not a sandwich or an html document.
             </p>
         </div>
@@ -231,10 +281,10 @@
         The last topic someone asked for my advice on is too sensitive for a blog post. However it was a deeply important decision in someone's life, and one that will likely affect them for many years.  I was asked what I thought about the situation - what I might do. I told them, but I also stepped back and realized it wasn't so cut-and-dry. Rather, it was one of those decisions that needed to be decided by them. Not pragmatically, but quasi-spiritually. The repercussions from the decision were such that they would have to live with the outcome, not me. Advice was positioned clearly as my own, and I also side-stepped the offer and reminded them that the decision was theirs to make.
         </p>
         <p class="blogpost">
-        When I think of my own values the result is that I feel good inside: a sense of calmness. Less in a proud-way, and more in a way that cuts through any lingering fog that might be causing some cognitive dissonance. Just this simple practice of writing them down could be a great way to mitigate stereotype threat which can be fog in its own right. 
+        When I think of my own values the result is that I feel good inside: a sense of calmness. Less in a proud-way, and more in a way that cuts through any lingering fog that might be causing some cognitive dissonance. Just this simple practice of writing them down could be a great way to mitigate stereotype threat which can be fog in its own right.
         </p>
         <p class="blogpost">
-        To combat the threat I think one of the biggest steps is to first be able to recognize it. It can creep up slowly, so addressing it early on is important. Next, I think simply reminding oneself of their values is a clever start. Cut through the noise, remind yourself of where you're from and where you're going. Stereotypes are rarely founded in values. And while they carry a heavy weight, such threats should inevitably dwindle in the face of deep-rooted personal values. 
+        To combat the threat I think one of the biggest steps is to first be able to recognize it. It can creep up slowly, so addressing it early on is important. Next, I think simply reminding oneself of their values is a clever start. Cut through the noise, remind yourself of where you're from and where you're going. Stereotypes are rarely founded in values. And while they carry a heavy weight, such threats should inevitably dwindle in the face of deep-rooted personal values.
         </p>
       </div>
    </div>
@@ -247,7 +297,7 @@
         <p class="blogtitle">JavaScript vs Ruby - Further Observations  </p>
         </a>
         <p class="blogpost">
-        Before DBC the most time I'd spent in any language was with JavaScript. I'd be hard-pressed to say, "it was my language," but it's the one I knew the most. 
+        Before DBC the most time I'd spent in any language was with JavaScript. I'd be hard-pressed to say, "it was my language," but it's the one I knew the most.
         </p>
          <p class="blogpost">
         Changing to Ruby and now back to JS has been an interesting experience. I felt a mix of emotions when I first switched: like I was leaving an unfinished project, like I might forget the syntax due to non-use, like I might not understand Ruby as well as I had gotten along with JS.
@@ -264,7 +314,7 @@
         </p>
         <p class="blogpost"><ul class="ul">
           <li class="li"><span class="bold">They have similar purposes:</span> both are container objects, both are non-number indexed and both share companionship with number-indexed arrays. In short, they play a similar role in each language.</li>
-          <li class="li"><span class="bold">They're accessed and updated similarly:</span> both are easy to do so, albeit with a little change in syntax:</li> 
+          <li class="li"><span class="bold">They're accessed and updated similarly:</span> both are easy to do so, albeit with a little change in syntax:</li>
         </ul></p>
         <p><img class="blogimg" src="../imgs/jsrbaccess1.png"></p>
         <p><img class="blogimg" src="../imgs/jsrbaccess2.png"></p>
@@ -273,7 +323,7 @@
         </p>
            <p class="blogpost"><ul class="ul">
           <li class="li"><span class="bold">Naming conventions:</span> Ruby calls them "hashes" and JS calls them "objects". The latter feels a little funny since Ruby considers everything in the language to be an object. A minor pitfall for a beginner. Next, Ruby calls each item in the hash an "attribute", which is also known as a key. JavaScript refers to this as a "property." It feels like good practice to simply consider both to be keys with respective values. </li>
-          <li class="li"><span class="bold">Iteration: </span> I'm yet to spend much time working with JavaScript objects, but so far it feels like their iteration is a little more verbose than Ruby's for hashes - which is expected since Ruby is known for being succinct. Both are similar, though note the ability for Ruby to format the output (at least using this technique):</li> 
+          <li class="li"><span class="bold">Iteration: </span> I'm yet to spend much time working with JavaScript objects, but so far it feels like their iteration is a little more verbose than Ruby's for hashes - which is expected since Ruby is known for being succinct. Both are similar, though note the ability for Ruby to format the output (at least using this technique):</li>
         </ul></p>
         <p><img class="blogimg" src="../imgs/jsrbaccess3.png"></p>
         <p><img class="blogimg" src="../imgs/jsrbaccess4.png"></p>
@@ -284,10 +334,10 @@
         <p><img class="blogimg" src="../imgs/jsrbclasses1.png"></p>
         <p><img class="blogimg" src="../imgs/jsrbclasses2.png"></p>
         <p class="blogpost">
-        JavaScript and Ruby fill similar needs with Objects, Hashes and Classes. And familiarizing myself with both has given me more respct for them as they serve vital roles in housing all the data that we morph into awesome applications. 
+        JavaScript and Ruby fill similar needs with Objects, Hashes and Classes. And familiarizing myself with both has given me more respct for them as they serve vital roles in housing all the data that we morph into awesome applications.
         </p>
         <p class="blogpost">
-        Think a hash's key-value pairs are as boring as Brussels sprouts (with whom they share an odd likelihood)? I sort of did as well. At least until we were challenged to create a game using just a few objects as the foundation. It's pretty amazing what's possible when you start looking at things differently. For example, are the key-value pairs just integers and strings? Or are they names and hitpoints for wizards in a video game? X-Y coordinates for your hidden treasure? Datasets for your next infograph? Like a boring stalk, it's all about what you do with it! 
+        Think a hash's key-value pairs are as boring as Brussels sprouts (with whom they share an odd likelihood)? I sort of did as well. At least until we were challenged to create a game using just a few objects as the foundation. It's pretty amazing what's possible when you start looking at things differently. For example, are the key-value pairs just integers and strings? Or are they names and hitpoints for wizards in a video game? X-Y coordinates for your hidden treasure? Datasets for your next infograph? Like a boring stalk, it's all about what you do with it!
         </p>
         <p><img class="blogimg" src="../imgs/sprouts.jpg"></p>
         <p><img class="blogimg" src="../imgs/sprouthash.png"></p>
@@ -394,17 +444,17 @@
         <p class="blogtitle">Pair Programming and All Its Wonders</p>
         </a>
         <p class="blogpost">
-        DBC emphasizes the importance of pair programming, and this is reflected in the syllabus: during the remote portion we pair three times a week. With sessions lasting up to two hours it's a pretty intimate experience. But coding is rarely done in a bubble, so it's important to get an early start on our ability to play with others. 
+        DBC emphasizes the importance of pair programming, and this is reflected in the syllabus: during the remote portion we pair three times a week. With sessions lasting up to two hours it's a pretty intimate experience. But coding is rarely done in a bubble, so it's important to get an early start on our ability to play with others.
         </p>
         <p class="blogpost">
-        <a href="http://en.wikipedia.org/wiki/Pair_programming">Studies have shown</a> companies who embrace pair programming reap the rewards. This means less bugs, higher-quality code and incrased job satisfaction. It also puts employees in positions where they can learn something new, and with an undertone of team-building and communication. It may come with an upfront cost, but whether your goal is to increase profitability or increase employee happiness, the benefits from a culture of pairing are ample. Here's some of my initial reflections on what it's been like learning how to pair - and all while learning how to code! 
+        <a href="http://en.wikipedia.org/wiki/Pair_programming">Studies have shown</a> companies who embrace pair programming reap the rewards. This means less bugs, higher-quality code and incrased job satisfaction. It also puts employees in positions where they can learn something new, and with an undertone of team-building and communication. It may come with an upfront cost, but whether your goal is to increase profitability or increase employee happiness, the benefits from a culture of pairing are ample. Here's some of my initial reflections on what it's been like learning how to pair - and all while learning how to code!
          </p>
         <h3>Pairing:</h3>
         <p class="blogpost">
-        If I had to wrap up my so-far experience with pair programming, it would be "pretty darn cool." For some context, I'd consider myself an introvert. I also have a unique learning style. Some might call it "slow," but hey, it feels more "methodical" to me. It takes me an extra moment to get things, but when I do I'm pretty good to go. But mix those two things together and I was a little intimidated to share Sublime with someone else. And that's just the interpersonal stuff. What about when it comes to simply adding another brain to the mix? Two minds trying to solve the same problem, but perhaps in different ways? We all have different approaches. 
+        If I had to wrap up my so-far experience with pair programming, it would be "pretty darn cool." For some context, I'd consider myself an introvert. I also have a unique learning style. Some might call it "slow," but hey, it feels more "methodical" to me. It takes me an extra moment to get things, but when I do I'm pretty good to go. But mix those two things together and I was a little intimidated to share Sublime with someone else. And that's just the interpersonal stuff. What about when it comes to simply adding another brain to the mix? Two minds trying to solve the same problem, but perhaps in different ways? We all have different approaches.
         </p>
         <p class="blogpost">
-         I'm not sure if it's because DBC armed us with a diplomatic approach, but 100% of my pairing sessions have been notably mutual when it comes to everyone having a voice. This might be different after the honeymoon period wears off and I've spent days with the same people. But so far, so good. 
+         I'm not sure if it's because DBC armed us with a diplomatic approach, but 100% of my pairing sessions have been notably mutual when it comes to everyone having a voice. This might be different after the honeymoon period wears off and I've spent days with the same people. But so far, so good.
         </p>
         <img class="blogimg" src="../imgs/pair.jpg">
         <p class="blogpost">
@@ -447,10 +497,10 @@
         <span class="italics">"Classes are super powerful, and I love them."</span>
         </p>
          <p class="blogpost">
-        That should be how you feel when someone mentions classes in Ruby - that they're super powerful, and you love them!  
+        That should be how you feel when someone mentions classes in Ruby - that they're super powerful, and you love them!
         </p>
         <p class="blogpost">
-        Humans like things to make sense, and we go to some pretty big lengths to make sure they do! We explore, poke and prod. We create languages so we can make sense of our findings, and we create names so we can tell things apart. For example, humans and dog are both "things". They're both living things, and they're both mammals. And both like being pet. 
+        Humans like things to make sense, and we go to some pretty big lengths to make sure they do! We explore, poke and prod. We create languages so we can make sense of our findings, and we create names so we can tell things apart. For example, humans and dog are both "things". They're both living things, and they're both mammals. And both like being pet.
         </p>
         <p class="blogpost">
         Like comparing and contrasting two mammals, classes in Ruby allow us to create objects that come pre-packged with specific traits, including those they inherit - similar to how a dog and human inherit traits from the mammal 'class'. Let's take a closer look by creating a class together.
@@ -475,7 +525,7 @@
         </p>
         <p><img class="blogimg" src="../imgs/class4.png"></p>
         <p class="blogpost">
-        You might be intimidated by how quickly our class has grown. And all just to store a few attributes. Fear not, Ruby to the rescue. If you notice your class methods are doing one thing, it's likely that they're either "reading" or "writing". For example, our artist method simply "reads" its value to the user. In cases like these we can tidy things up by using 'attr_reader' and 'attr_writer'. Notice the single-task methods have been absorbed into the 'attr_reader' section at the top. The functionality is the same: 
+        You might be intimidated by how quickly our class has grown. And all just to store a few attributes. Fear not, Ruby to the rescue. If you notice your class methods are doing one thing, it's likely that they're either "reading" or "writing". For example, our artist method simply "reads" its value to the user. In cases like these we can tidy things up by using 'attr_reader' and 'attr_writer'. Notice the single-task methods have been absorbed into the 'attr_reader' section at the top. The functionality is the same:
         </p>
         <p><img class="blogimg" src="../imgs/class5.png"></p>
         <p class="blogpost">
@@ -487,7 +537,7 @@
         </p>
         <p><img class="blogimg" src="../imgs/class7.png"></p>
         <p class="blogpost">
-        With that we've learned how to: 
+        With that we've learned how to:
         </p>
         <p class="blogpost"><ul class="ul">
           <li class="li"><span class="bold">Define a new class</span></li>
@@ -523,17 +573,17 @@
         </p>
         <img class="blogimg" src="../imgs/serial.png">
          <p class="blogpost">
-        So what's a "bonafied startup"? A company with a website? With an app? A <span class="italics">responsive</span> website? Founded by Stanford grads? Funded by Sand Hill? Funded by grandma? Built in San Francisco? I don't have the answers. But I think a start would be to have a sound, old-fashioned business plan. One that sizes a market, describes the (realistic) opportunity, analyzes the competition and all those other things taught in business school (that educational system that pre-dated <a href="http://en.wikipedia.org/wiki/Massive_open_online_course">MOOCs</a>). 
+        So what's a "bonafied startup"? A company with a website? With an app? A <span class="italics">responsive</span> website? Founded by Stanford grads? Funded by Sand Hill? Funded by grandma? Built in San Francisco? I don't have the answers. But I think a start would be to have a sound, old-fashioned business plan. One that sizes a market, describes the (realistic) opportunity, analyzes the competition and all those other things taught in business school (that educational system that pre-dated <a href="http://en.wikipedia.org/wiki/Massive_open_online_course">MOOCs</a>).
         </p>
         <p class="blogpost">
         I used to work for Trulia, a real estate startup. At one time Trulia was the disruptor. During my tenure it grew about 10x (200 - 1,500 employees), quadrupled its UV's (~14m - ~60m), went public on the NYSE and was finally purchased by sworn enemy Zillow. I'm not sure if or when Trulia was no longer a startup. But if so, perhaps it was around the time when other disruptors entered the space. Some were successful and some fizzled out. The ones that succeeded typically had a business plan, among other things like smart founders, a great product and solid sales team. But the ones that fizzled out typically had something in common: they seemed to all be pet-projects of sorts. Again, nothing wrong with a pet project.
-        </p> 
+        </p>
         <p class="blogpost">
-        The observations at Trulia are just one example. The technological landgrab is prevalent: <a href="https://youtu.be/qYZF6oIZtfc">Will.i.am is a coder</a>, <a href="https://youtu.be/69V__a49xtw"> HBO has the hit series Silicon Valley</a>, "serial entrepreneur" is the new "CEO", <a href="http://tiffzhang.com/startup/?s=814644359517">and satirical websites like this almost seem real</a>. 
+        The observations at Trulia are just one example. The technological landgrab is prevalent: <a href="https://youtu.be/qYZF6oIZtfc">Will.i.am is a coder</a>, <a href="https://youtu.be/69V__a49xtw"> HBO has the hit series Silicon Valley</a>, "serial entrepreneur" is the new "CEO", <a href="http://tiffzhang.com/startup/?s=814644359517">and satirical websites like this almost seem real</a>.
         </p>
         <img class="blogimg" src="../imgs/william.jpg">
         <p class="blogpost">
-        Pops said an observation without a fix is just a complaint, so here's some ideas. Do as you wish with your time and money (and try to do good by other people's time and money, too). But if you want to start a business, then start a business. I'd argue that a website isn't a business. Spending time on something doesn't make it a business. Sizing a market and saying "all we need is 3% to get rich" isn't a sound business plan. And save the C-level titles for companies with board members. 
+        Pops said an observation without a fix is just a complaint, so here's some ideas. Do as you wish with your time and money (and try to do good by other people's time and money, too). But if you want to start a business, then start a business. I'd argue that a website isn't a business. Spending time on something doesn't make it a business. Sizing a market and saying "all we need is 3% to get rich" isn't a sound business plan. And save the C-level titles for companies with board members.
         </p>
          <p class="blogpost">
          Want to make a business that's going to change the world? Or at least grab a significant portion of the market? Kudos to you, that's awesome. I think the best first step would be to Google <span class="italics">"how to build a business,"</span> instead of <span class="italics">"how to build a website."</span> The prior is the end, and the latter is simply a means!
@@ -544,16 +594,16 @@
 <div id="mainbox">
     <p id="subject">Enums</p>
       <div class="blogbody">
-        <a href="blog_posts/t4-enumerable-methods.html"> 
-        <p class="blogtitle">fun with enumerator methods: <span class = "italics"> cycle - group_by - map</span></p></a> 
+        <a href="blog_posts/t4-enumerable-methods.html">
+        <p class="blogtitle">fun with enumerator methods: <span class = "italics"> cycle - group_by - map</span></p></a>
         <p class="blogpost">
          Let's take a peek at three enumerator methods. But first, a quick refresh of enumerators in general:
         </p>
          <p class="blogpost">
-         <span class = "italics"> <a href="http://ruby-doc.org/core-2.2.2/Enumerator.html">"An enumerator is a class which allows both internal and external iteration."</a></span> 
+         <span class = "italics"> <a href="http://ruby-doc.org/core-2.2.2/Enumerator.html">"An enumerator is a class which allows both internal and external iteration."</a></span>
         </p>
          <p class="blogpost">
-         In other words, a class is considered "to be an enumerator" if it has a specific set of methods that allow for iteration. We're familiar with classes like Array and String being enumerable, but this is because they come bundled with built-in enumerable methods. Which methods, you ask? Mainly the ones that allow iteration. The most popular (as well as mandatory) is <span class = "italics">.each</span>. 
+         In other words, a class is considered "to be an enumerator" if it has a specific set of methods that allow for iteration. We're familiar with classes like Array and String being enumerable, but this is because they come bundled with built-in enumerable methods. Which methods, you ask? Mainly the ones that allow iteration. The most popular (as well as mandatory) is <span class = "italics">.each</span>.
         </p>
         <p class="blogpost">
         So enumerators are classes that can be iterated. Whether or not they can be iterated is up to the methods they contain. Popular classes come with them built in, but you can also make custom classes that are enumerable by adding  <a href="http://stackoverflow.com/questions/7220634/how-do-i-use-the-enumerable-mixin-in-my-class"><span class = "italics">include Enumerable</span></a> during their initial definition. Now lets learn about some of the popular enumerable methods:
@@ -567,7 +617,7 @@
            Another way of thinking of it is that group_by creates a hash and says, "any time there's a unique output from the block, we'll save it to a new key. For every element that resulted in that unique output, we'll assign it to that key's value in an array form. This way you can group all the elements together that would have the same output when passed to the block"</p>
             <p class="blogpost">
            So the hash's <span class="italics">keys</span> come from the evaluated result passed to the block on each iteration. For example, if the block multiplys an input by three, the first key would become the output, and the next key would become the value from the next iteration. On the other hand, the hash's <span class="italics">values</span> are simply the value of the element that was used by the block. In other words, it's the value of each index being passed to the block. Consequentially, the hash's value can have more than one value (in array-form), one for each value that results in the same output when passed to the block.</p>
-           <p>In the code below we call group_by on the range of numbers from one to six. Look to the block 
+           <p>In the code below we call group_by on the range of numbers from one to six. Look to the block
            and we'll notice that for every index (every number in the range), we simply multiply it by three. We've done this plenty of times with .each. But the difference is the way the output is saved. In the case of group_by, the output is saved in a hash. We see the <span class="italics">keys</span> become the values the block evaluated to (3,6,9 etc). The <span class="italics">values</span> are each element that resulted in the value that we just assigned to the keys. For example, the first pair has a value of one. When we multiply the value of the first index by three, the output is three. So the key becomes three, and the value is 1 (the value that was passed ot the block):</p>
           <p><img class="blogimg" src="../imgs/group_by.png"></p>
           </li>
@@ -575,7 +625,7 @@
           <p><img class="blogimg" src="../imgs/map.png"></p>
            </li>
            <p class="blogpost">
-          There's plenty of other enumerator methods to do all the tricks you need. Be sure to check out <a href ="http://ruby-doc.org/core-2.2.2/">the Ruby Docs</a> for more! 
+          There's plenty of other enumerator methods to do all the tricks you need. Be sure to check out <a href ="http://ruby-doc.org/core-2.2.2/">the Ruby Docs</a> for more!
         </ul>
         </p>
       </div>
@@ -603,7 +653,7 @@
         <p class="blogpost"> During our next argument I’m excited to let my fiance know that I’m the one who’s 'based in reality'. Just kidding though, we don’t really argue.
         </p>
          <p class="blogpost">
-          Actually, sometimes we do. And perhaps it’s because I process information in an ordered, sequential way! I can be somewhat robotic when it comes to approaching things. While this might help when learning Ruby, it can be a double-edged sword when it comes to interpersonal skills. Humans are complex creatures. Sometimes it helps to approach things in an orderly fashion, for example when crafting the wedding budget. But other times, people just might want to vent, for example. When I’m trying to learn why my fiance had a bad day, I need to keep in mind that I might not always understand it, and sometimes my way of offering support shouldn’t be in an ordered, sequential manner. Just a pair of open ears and asking “if there’s anything I can do to help” would usually suffice. Hopefully I can take advantage of this understanding during DBC. It's a beautiful thing that we all process (and teach) information differently. The better I understand my own methods, the better I can teach, and the better I can prep myself to receive. 
+          Actually, sometimes we do. And perhaps it’s because I process information in an ordered, sequential way! I can be somewhat robotic when it comes to approaching things. While this might help when learning Ruby, it can be a double-edged sword when it comes to interpersonal skills. Humans are complex creatures. Sometimes it helps to approach things in an orderly fashion, for example when crafting the wedding budget. But other times, people just might want to vent, for example. When I’m trying to learn why my fiance had a bad day, I need to keep in mind that I might not always understand it, and sometimes my way of offering support shouldn’t be in an ordered, sequential manner. Just a pair of open ears and asking “if there’s anything I can do to help” would usually suffice. Hopefully I can take advantage of this understanding during DBC. It's a beautiful thing that we all process (and teach) information differently. The better I understand my own methods, the better I can teach, and the better I can prep myself to receive.
         </p>
         <p class="blogpost">
           On the topic of learning styles, there’s also a school of thought that outlines two different "mindsets" when it comes to learning: <span class="italics">fixed</span> versus  <span class="italics">growth:</span>
@@ -611,7 +661,7 @@
         <li class="li"><span class="bold">Fixed mindset: </span>one’s ability is innate. Consequentially, someone with a fixed mindset is prone to proving he or she is better than someone else. This mindset is also prone to taking less risks because they’re a chance to have one’s ability disproven. Dislikes feedback.</li>
         <li class="li"><span class="bold">Growth mindset: </span>ability can be developed. Consequentially, someone with a growth mindset focuses on the process rather than the outcome. He or she is more likely to look to continually improve themselves because of their non-deterministic outlook. This type of mindset tends to be better at relationships because it doesn’t look at others as competition. Values feedback.</li>
         </ul>
-        </p> 
+        </p>
         <p class="blogpost">
           I'd say this has been the biggest struggle for me. How to get out of the idea that I might not be "good enough", like being good or not good is somehow a binary status. I've been combating this by setting a goal of simply always getting better. For example, that quick 30 minutes of reading at lunch? I learned something new. That blog post from earlier? That's one more than yesterday. I learned something, I troubleshot, I got something done. Now I learn from it, reflect, put it behind me and make room for what's next. This mindset has relieved a lot of pressure while simultaneously putting wind in my sails. After all, I do enjoy coding! But sometimes we can be our own worst enemy, so consider doing some of the lessons. They can be pretty helpful when it comes to being more diplomatic with yourself when the times get tough!
         </p>
@@ -632,7 +682,7 @@
           This is where arrays and hashes come into play. "What about strings", you ask? Keep in mind strings are a single object. Each character in a string isn't its own object, as a test to .object_id will show. So it's best to look at strings as single objects, and instead consider our <span class="italics">arrays</span> and <span class="italics">hashes</span> as the way to contain multiple objects.
         </p>
         <p class="blogpost">
-          Let's take things a little further by looking at the latter. They're similar in that they both contain data. However arrays do this in an 'organized' fashion, where hashes are unordered. Why do we need this? Because sometimes we like things to be orderly, and sometimes we benefit from the casualness of an unordered collection. For example, every Sunday (before Game of Thrones) I put my daily vitamins in respective slots of a pill box. This is an ordered collection, much like an array. Even moreso because it's laid out in a linear fashion Monday-Friday (more about his later). However when when 11:30am rolls around and I have my mid-morning snack of almonds and cashews, I like them to be mixed. I want them to be in a collection like a bowl (or a hash. The digital kind, not breakfast). But I prefer an unorganized mix. 
+          Let's take things a little further by looking at the latter. They're similar in that they both contain data. However arrays do this in an 'organized' fashion, where hashes are unordered. Why do we need this? Because sometimes we like things to be orderly, and sometimes we benefit from the casualness of an unordered collection. For example, every Sunday (before Game of Thrones) I put my daily vitamins in respective slots of a pill box. This is an ordered collection, much like an array. Even moreso because it's laid out in a linear fashion Monday-Friday (more about his later). However when when 11:30am rolls around and I have my mid-morning snack of almonds and cashews, I like them to be mixed. I want them to be in a collection like a bowl (or a hash. The digital kind, not breakfast). But I prefer an unorganized mix.
         </p>
        <p class="blogpost">
        <ul class="ul">
@@ -680,8 +730,8 @@
 
   <div id="mainbox">
     <p id="subject">Git</p>
-    <div class="blogbody"> 
-     <a href="blog_posts/t1-git-blog.html"> 
+    <div class="blogbody">
+     <a href="blog_posts/t1-git-blog.html">
       <p class="blogtitle">Git Reflection, AKA: <span class="italics">"Stop, Collaborate and Listen!"</span>
       </p>
       </a>
@@ -706,7 +756,7 @@
   <div id="mainbox">
     <p id="subject">DBC</p>
       <div class="blogbody">
-       <a href="blog_posts/c1-chefs-kitchen.html"> 
+       <a href="blog_posts/c1-chefs-kitchen.html">
        <p class="blogtitle">Chef's Kitchen: DBC Reflection, AKA: <span class="italics">Development Isn't a Spectator Sport"</span>
         </p>
         </a>
@@ -716,10 +766,10 @@
           Today we watched <span class="link"><a href = https://vimeo.com/85001014> a fireside chat recording with Shereef - DBC founder</a></span>. As always, Shefeef's enthusiasm for building a strong, healthy and passionate coding environment is infectious. He describes the fist cohort, being a marauding group of youthful coders rallied via Hacker News. Something he recognized was their ability to work as a team. Something in the office is broken? Take the lead and fix it. People are hungry? Order food. It was a group of do'ers, and do they did. Shereef goes on to describe how important this mentality is with DBC and with learning any new skill. Treat DBC as if you're a cook in a kitchen, as if you're one of many on a soccer team. If something needs to get done, do it. If someone is struggling, help them. If you aren't understanding something, go out there and try to understand it. Don't look at your education as something you purchase. It's not a package, it's not a service. It's an interactive experience, and your role isn't to just watch. Showing up doesn't mean showing up physically. It means showing up emotionally, intelligently, empathetically.
         </p>
         <p>
-            So far my take on the DBC experience is better than I expected. Well, I suppose it's been all I was hoping for, and that's something I don't take for granted. The curriculum isn't too easy, and it isn't too hard. I trust I'll eat my words in a few weeks and consider these early weeks to have been cakewalk. But the introduction has been a nice pace. I can tell a lot of work went into our syllabus. I like the repetition, the immersion, the teaching-by-doing. In the past I've tried to learn CLI and Git. I'm finding that it's finally just now sticking, and that's exciting. 
+            So far my take on the DBC experience is better than I expected. Well, I suppose it's been all I was hoping for, and that's something I don't take for granted. The curriculum isn't too easy, and it isn't too hard. I trust I'll eat my words in a few weeks and consider these early weeks to have been cakewalk. But the introduction has been a nice pace. I can tell a lot of work went into our syllabus. I like the repetition, the immersion, the teaching-by-doing. In the past I've tried to learn CLI and Git. I'm finding that it's finally just now sticking, and that's exciting.
         </p>
         <p>
-           I'm also really enjoying how active my 'cohorts' have been on Google+. People don't seem to be afraid to reach out and to help out. I've felt comfortable seeking help as well. A few times I began asking something that was stumping me, but I decided to try just one more time before "bugging" other people's inboxes. I know I shouldn't look at it like that. And I don't really. But I think it's encouraging to know people are there to help, but in the end, this is my education, my playground. I need to struggle, to know when to keep looking, and to know when to ask for help. 
+           I'm also really enjoying how active my 'cohorts' have been on Google+. People don't seem to be afraid to reach out and to help out. I've felt comfortable seeking help as well. A few times I began asking something that was stumping me, but I decided to try just one more time before "bugging" other people's inboxes. I know I shouldn't look at it like that. And I don't really. But I think it's encouraging to know people are there to help, but in the end, this is my education, my playground. I need to struggle, to know when to keep looking, and to know when to ask for help.
         </p>
         <p>
           My end-of-week reflection is that I'm liking how things are going. I think I fall in the "imposter" category and need to keep that in mind. That said, I'm finding myself stepping up to the plate. And what's exciting to me is that I'm finding myself overcoming little bugs, issues, mis-steps. Instead of moving on and skipping over something if it's not working or doesn't make sense, I'm finding myself really curious to fix it/understand it before moving on. That said, I need to be cognizant of the time. I hear it's only going to get more rigorous going forward. I'd like to be done with my work by Friday evening, saving bonus work for the weekend. This means time management, and this means mind-management. I'm working on getting into my zone quicker. On the flip side, I'm working on being ok with working out of my zone. That say I can take advantage of the quick 30-minute window before dinner is ready, for example.
@@ -730,9 +780,9 @@
    </div>
       <!--####End Blog Posts####-->
 
-      
 
-    </div> 
+
+    </div>
   </body>
   <footer></footer>
 </html>

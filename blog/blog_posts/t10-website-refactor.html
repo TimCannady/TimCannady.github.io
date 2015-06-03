@@ -1,0 +1,128 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../styles/blog-stylesheet.css">
+    <!--<link rel="stylesheet" type="text/css" href="../../styles/default.css">  -->
+    <title>Tim Cannady</title>
+    <link rel="shortcut icon" href="http://33.media.tumblr.com/avatar_6cf41b97f3fe_48.png"/>
+  </head>
+
+  <header>
+    <div id="headername"><a id="aheadstyle" href="../../index.html">Tim Cannady</a></div>
+      <div id="social">
+        <a href="https://github.com/TimCannady"><img src="../../imgs/github32.png"></a>
+        <a href="https://plus.google.com/112916819767748948561/posts"><img src="../../imgs/googleplus32.png"></a>
+        <a href="https://www.linkedin.com/in/timcannady"><img src="../../imgs/linkedin32.png"></a>
+        <a href="https://soundcloud.com/ever"><img src="../../imgs/soundcloud32.png"></a>
+        <a href="http://www.twitter.com/tcannadysf"><img src="../../imgs/twitter32.png"></a>
+      </div>
+    </div>
+  </header>
+
+  <body>
+
+    <div id = "content">
+
+      <div id = "sidebar">
+
+        <div id="photobox">
+          <img id = "photoboxavatar" src="http://33.media.tumblr.com/avatar_6cf41b97f3fe_48.png" alt="Tim Cannady" id="avatar"> Tim Cannady
+        </div>
+
+        <div id="biobox">Reflections on web development and product management
+          <ul>
+            <li>student: DBC</li>
+            <li>mkt mgr + product liaison: TRLA</li>
+            <li>timcannady@gmail.com</li>
+            <li>twitter.com/tcannadysf</li>
+            <li>linked.com/in/timcannady</li>
+            <li>github.com/timcannady</li>
+          </ul>
+        </div>
+
+        <div id ="sitenav">
+          <ul id = "sitenavlist">
+            <li class = "sitenav_li"><a href="../../index.html">Home</a></li>
+            <li class = "sitenav_li"><a href="../blog-home.html">My Blog</a></li>
+            <li class = "sitenav_li"><a href="../../projects.html">Projects</a></li>
+          </ul>
+        </div>
+
+        <div id="recenttweets">
+          <a class="twitter-timeline" width = "100%" href="https://twitter.com/TCannadySF" data-widget-id="377547627438419968">Tweets by @TCannadySF</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+
+        <div id="soundcloud">
+           <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F105780607"></iframe>
+        </div>
+      </div>
+
+      <!--####Blog Posts####-->
+
+      <div id="mainbox">
+        <p id="subject">HTML/CSS</p>
+        <div class="blogbody">
+          <p class="blogtitle">If it's worth doing, it's worth doing right</p>
+          <p class="blogpost">
+            This website began as a quick and dirty place to post weekly reflections. It's been a psuedo-practice in designing and managing a hand-coded website, researching technical issues and, finally, teaching them to an audience (which is always helpful).
+          </p>
+
+          <p class="blogpost">
+            It was never expected to be a master of anything (UX, UI, style, content, cutting-edge technologies, etc). Rather it was just a 'semi' deep-dive all at once. In other words, it was never meant to be polished.
+          </p>
+
+          <p class="blogpost">
+            The site has grown to something more robust and proud, including the addition of a new Projects section. And typical to growth it hasn't come without some pains.
+          </p>
+
+          <img class="blogimg" src="../../imgs/rebuild.jpg">
+
+          <p class="blogpost">
+            The foundation was somewhat imperfect due to it being one of my first HTML and CSS projects. On one hand I'm proud of not letting the perfectionist drag me down. After all, "if you launch a perfect product, you've waited too long." But on the other hand it required almost a day's work (for a beginner) to retool the site. Perhaps it's a zero-sum game: it could have taken me a day to do correctly from the start seeing that I was a beginner. But now that the site has grown so much (around 25 page files) I had to go back and update each one to match the new template.
+          </p>
+
+          <p class="blogpost">
+            Hindsight is 20/20 so I won't be too hard on myself. But I <span class="italics">will</span> try to learn from it! Here's some questions I'll ask, followed by some hesitations that I'll probably only quiet with time:
+          </p>
+
+          <p class="blogpost">
+            <ul class="ul">
+             <li class="li"><span class="bold">If it's worth doing, it's worth doing right: </span>but how right?</li>
+             <li class="li"><span class="bold">Ask myself what the likelihood is that it sticks: </span> but at what point of likeliness does it matter?</li>
+             <li class="li"><span class="bold">Ask who will use it: </span>if it's not private, will I be ok with other people seeing it?</li>
+            </ul>
+          </p>
+
+          <p class="blogpost">
+            What's funny is that the changes are probably indiscernible because they had more to do with the structure than the design. All in all it was a valuable experience. I'll be sure to consider those questions the next time I'm building a new site. And I'm also left with some questions that feel a little more 'intermediate' in nature, which is exciting:
+          </p>
+
+          <p class="blogpost">
+            <ul class="ul">
+             <li class="li"><span class="bold">Asynchronous loading: </span>how can I design the site so the sidebar won't refresh on each page change? I've read about AJAX but am not sure if that's the right technology. But I'm starting to see the need for these types of technologies.</li>
+             <li class="li"><span class="bold">High-tech templates: </span>it took a while to update all the the posts to the new template. I wish there were a technology that was like a CSS for HTML. I have a template for my blog posts where I just copy in the new blog's content. But it would be cool if there were some kind of templating system. Maybe a call to "include.blog.template" at the top of the HTML file. Something to make it easier to replicate, and update, similar pages in a clean and quick manner </li>
+            </ul>
+          </p>
+
+          <div class = "imgbox">
+            <p>
+              "Necessity is the mother of invention"
+              <img class="blogimg" src="../../imgs/necessity.jpg">
+            </p>
+          </div>
+
+           <p class="blogpost">
+            I initially redesigned the site so zooming didn't cause the divs to overlap (at least within 90%-125% zoom on Chrome). It's funny how much you can learn from such a simple task - both about how to update a site, as well as ideas you get for the future.
+          </p>
+
+        </div>
+      </div>
+
+      <!--####End Blog Posts####-->
+
+    </div>
+  </body>
+  <footer></footer>
+</html>
