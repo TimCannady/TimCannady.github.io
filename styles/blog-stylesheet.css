@@ -227,7 +227,6 @@ header{
 .imgbox img{
 	position: relative;
 	margin: 0px auto;
-	display: block;
 	border-radius: 5px;
 	/*border: 1px solid red;*/
 }
@@ -241,6 +240,42 @@ header{
 	font-size: 16px;
 	color: #555;
 }
+
+.achievementbox {
+	position: relative;
+	height: 15%;
+	padding: 1%;
+	margin: 0% auto;
+	display: block;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 14px;
+/*	border: 1px solid #BDBCB9;*/
+}
+
+.achievementbox img{
+	position: relative;
+	height: 100%;
+	border-radius: 5px;
+	border: none;
+	display: inline-block;
+	margin-right: 3.5%;
+	margin-left: 3.5%;
+/*	opacity: 0.7;*/
+/*	border: 1px solid red;*/
+}
+
+
+.achievementboxwrapper{
+	border-radius: 5px;
+	border: 1px solid #BDBCB9;
+	margin-bottom: 5%;
+}
+
+.h2achievement {
+	margin-bottom: 1%;
+}
+
 /********** END BLOG POST ************/
 /********** END BLOG POST ************/
 
